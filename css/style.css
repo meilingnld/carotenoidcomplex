@@ -34,6 +34,12 @@ h5 {font-size: 1.3em;}
 
 small, .font_small {font-size: 0.85em;}
 
+*::before, *::after, *::before, *::after {
+    font-family: 'linea', 'Simple-Line-Icons', 'themify', 'FontAwesome', 'Archivo Narrow', Helvetica;
+    box-sizing: border-box;
+}
+
+
 /*-------------------------------------------------*/
 /* ----------header---------- */
 /*-------------------------------------------------*/
@@ -339,6 +345,9 @@ footer {
 }
 footer h4{
 	margin-top:.7em;
+}
+.btn_link{
+	width:220px;padding-top:10px;margin-right:20px;
 }
 .copyright {
 	padding-top: 50px;

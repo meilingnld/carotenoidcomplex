@@ -1,0 +1,76 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<div class="nav-wrapper">
+  <header id="Top" class="affix-top">
+    <nav class="navbar navbar-default" role="navigation">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#defaultNavbar1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+          <div class="logo"> 
+            <!--remember to change this when transfer to actural server--> 
+            <!--href="/"--> 
+            <a href="/"><img src="https://www.neolife.com/static/responsive/images/logo.svg"></a></div>
+        </div>
+        <div class="collapse navbar-collapse" id="defaultNavbar1"> 
+          <!--div class="collapse navbar-collapse" id="navbar-collapse-main"-->
+          <ul class="nav navbar-nav navbar-right">
+            <li role="presentation" data-view-section="whycarotenoidcomplex"> <a href="/whycarotenoidcomplex/">Why Carotenoid Complex</a> </li>
+            <li role="presentation" data-view-section="clinicallyproven"> <a href="/clinicallyproven/clinicallyproven/">Clinically Proven</a>
+              <section class="subNav clearfix">
+                <ul class="navbar-right">
+                  <li role="presentation"data-view-sub-section="clinicallyproven/clinicallyproven"> <a href="/clinicallyproven/clinicallyproven/">Clinically Proven</a></li>
+                  <li data-view-sub-section="clinicallyproven/theimmunesystem"><a href="/clinicallyproven/theimmunesystem/">The Immune System</a></li>
+                  <li data-view-sub-section="clinicallyproven/firstlineofdefense"><a href="/clinicallyproven/firstlineofdefense/">First Line of Defense</a></li>
+                  <li data-view-sub-section="clinicallyproven/carotenoidimmunity"><a href="/clinicallyproven/carotenoidimmunity/">Carotenoid and Immunity</a></li>
+                  <li data-view-sub-section="clinicallyproven/defendyourcells"><a href="/clinicallyproven/defendyourcells/">Defend Your Cells</a></li>
+                  <li data-view-sub-section="clinicallyproven/protectyourheart"><a href="/clinicallyproven/protectyourheart/">Protect Your Heart</a></li>
+                </ul>
+              </section>
+            </li>
+            <li role="presentation" data-view-section="stories"> <a href="/stories/stories/">Stories</a>
+              <section class="subNav clearfix">
+                <ul class="navbar-right">
+                  <li role="presentation" data-view-sub-section="stories/stories"> <a href="/stories/stories/">Stories</a></li>
+                  <li data-view-sub-section="stories/wholefoodadvantage"><a href="/stories/wholefoodadvantage/">Whole Food Advantage</a></li>
+                  <li data-view-sub-section="stories/naturesblueprint"><a href="/stories/naturesblueprint/">Nature's Blue Print</a></li>
+                </ul>
+              </section>
+            </li>
+            <li role="presentation" data-view-section="researchresources"> <a href="/researchresources/researchresources/">Research & Resources</a>
+              <section class="subNav clearfix">
+                <ul class="navbar-right">
+                  <li role="presentation" data-view-sub-section="researchresources/researchresources"> <a href="/researchresources/researchresources/">Research & Resources</a></li>
+                  <li data-view-sub-section="researchresources/bioavailability"><a href="/researchresources/bioavailability/">Bioavailability</a></li>
+                  <li data-view-sub-section="researchresources/strongerec"><a href="/researchresources/strongerec/">Stronger than E & C</a></li>
+                  <li data-view-sub-section="researchresources/references"><a href="/researchresources/references/">References</a></li>
+                </ul>
+              </section>
+            </li>
+            <li role="presentation" data-view-section="expertopinions" > <a href="/expertopinions/expertopinions/">Expert Opinions</a>
+              <section class="subNav clearfix">
+                <ul class="navbar-right">
+                  <li role="presentation" data-view-sub-section="expertopinions/expertopinions" > <a href="/expertopinions/expertopinions/">Expert Opinions</a></li>
+                  <li data-view-sub-section="expertopinions/popularpress"><a href="/expertopinions/popularpress/">Popular Press</a></li>
+                  <li data-view-sub-section="expertopinions/sab"><a href="/expertopinions/sab/">Scientific Advisory Board</a></li>
+                </ul>
+              </section>
+            </li>
+            <li role="presentation" data-view-section="aboutneolife"> <a href="/aboutneolife/">About NeoLife</a> </li>
+          </ul>
+          <script type="text/javascript">
+   $( document ).ready(function() {
+      var parts = $('body').data('view').split('/'),
+          section  = parts[0],
+          sub_section = parts.slice(0,2).join('\\/');
+          //remember to change this when transfer to actural server//
+	      //section  = parts[0],
+          //sub_section = parts.slice(0,2).join('\\/');
+	      
+          $('li[data-view-section='+section+']').addClass('active');
+          $('li[data-view-sub-section='+sub_section+']').addClass('active');
+    });
+  </script> 
+        </div>
+      </div>
+    </nav>
+  </header>
+</div>

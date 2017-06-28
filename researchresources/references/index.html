@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NeoLife Carotenoid Complex</title>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="/js/jquery-1.11.3.min.js"></script>
+<script src="/js/jquery.easing.min.js"></script>
+<script src="/js/jquery.royalslider.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="/js/bootstrap.js"></script>
+<script src="/js/scripts.js"></script>
+<!-- Bootstrap -->
+<link href="/css/bootstrap.css" rel="stylesheet">
+<link href="/css/animate.css" rel="stylesheet">
+<link href="/css/fonts.css" rel="stylesheet">
+<link href="/css/style.css" rel="stylesheet">
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body data-view="researchresources/references/"><!-- #BeginLibraryItem "/Library/header.lbi" -->
+<div class="nav-wrapper">
+  <header id="Top" class="affix-top">
+    <nav class="navbar navbar-default" role="navigation">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#defaultNavbar1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+          <div class="logo"> 
+            <!--remember to change this when transfer to actural server--> 
+            <!--href="/"--> 
+            <a href="/"><img src="https://www.neolife.com/static/responsive/images/logo.svg"></a></div>
+        </div>
+        <div class="collapse navbar-collapse" id="defaultNavbar1"> 
+          <!--div class="collapse navbar-collapse" id="navbar-collapse-main"-->
+          <ul class="nav navbar-nav navbar-right">
+            <li role="presentation" data-view-section="whycarotenoidcomplex"> <a href="/whycarotenoidcomplex/">Why Carotenoid Complex</a> </li>
+            <li role="presentation" data-view-section="clinicallyproven"> <a href="/clinicallyproven/clinicallyproven/">Clinically Proven</a>
+              <section class="subNav clearfix">
+                <ul class="navbar-right">
+                  <li role="presentation"data-view-sub-section="clinicallyproven/clinicallyproven"> <a href="/clinicallyproven/clinicallyproven/">Clinically Proven</a></li>
+                  <li data-view-sub-section="clinicallyproven/theimmunesystem"><a href="/clinicallyproven/theimmunesystem/">The Immune System</a></li>
+                  <li data-view-sub-section="clinicallyproven/firstlineofdefense"><a href="/clinicallyproven/firstlineofdefense/">First Line of Defense</a></li>
+                  <li data-view-sub-section="clinicallyproven/carotenoidimmunity"><a href="/clinicallyproven/carotenoidimmunity/">Carotenoid and Immunity</a></li>
+                  <li data-view-sub-section="clinicallyproven/defendyourcells"><a href="/clinicallyproven/defendyourcells/">Defend Your Cells</a></li>
+                  <li data-view-sub-section="clinicallyproven/protectyourheart"><a href="/clinicallyproven/protectyourheart/">Protect Your Heart</a></li>
+                </ul>
+              </section>
+            </li>
+            <li role="presentation" data-view-section="stories"> <a href="/stories/stories/">Stories</a>
+              <section class="subNav clearfix">
+                <ul class="navbar-right">
+                  <li role="presentation" data-view-sub-section="stories/stories"> <a href="/stories/stories/">Stories</a></li>
+                  <li data-view-sub-section="stories/wholefoodadvantage"><a href="/stories/wholefoodadvantage/">Whole Food Advantage</a></li>
+                  <li data-view-sub-section="stories/naturesblueprint"><a href="/stories/naturesblueprint/">Nature's Blue Print</a></li>
+                </ul>
+              </section>
+            </li>
+            <li role="presentation" data-view-section="researchresources"> <a href="/researchresources/researchresources/">Research & Resources</a>
+              <section class="subNav clearfix">
+                <ul class="navbar-right">
+                  <li role="presentation" data-view-sub-section="researchresources/researchresources"> <a href="/researchresources/researchresources/">Research & Resources</a></li>
+                  <li data-view-sub-section="researchresources/bioavailability"><a href="/researchresources/bioavailability/">Bioavailability</a></li>
+                  <li data-view-sub-section="researchresources/strongerec"><a href="/researchresources/strongerec/">Stronger than E & C</a></li>
+                  <li data-view-sub-section="researchresources/references"><a href="/researchresources/references/">References</a></li>
+                </ul>
+              </section>
+            </li>
+            <li role="presentation" data-view-section="expertopinions" > <a href="/expertopinions/expertopinions/">Expert Opinions</a>
+              <section class="subNav clearfix">
+                <ul class="navbar-right">
+                  <li role="presentation" data-view-sub-section="expertopinions/expertopinions" > <a href="/expertopinions/expertopinions/">Expert Opinions</a></li>
+                  <li data-view-sub-section="expertopinions/popularpress"><a href="/expertopinions/popularpress/">Popular Press</a></li>
+                  <li data-view-sub-section="expertopinions/sab"><a href="/expertopinions/sab/">Scientific Advisory Board</a></li>
+                </ul>
+              </section>
+            </li>
+            <li role="presentation" data-view-section="aboutneolife"> <a href="/aboutneolife/">About NeoLife</a> </li>
+          </ul>
+          <script type="text/javascript">
+   $( document ).ready(function() {
+      var parts = $('body').data('view').split('/'),
+          section  = parts[0],
+          sub_section = parts.slice(0,2).join('\\/');
+          //remember to change this when transfer to actural server//
+	      //section  = parts[0],
+          //sub_section = parts.slice(0,2).join('\\/');
+	      
+          $('li[data-view-section='+section+']').addClass('active');
+          $('li[data-view-sub-section='+sub_section+']').addClass('active');
+    });
+  </script> 
+        </div>
+      </div>
+    </nav>
+  </header>
+</div>
+<!-- #EndLibraryItem --><div class="aboutneolife wrapper">
+  <section class="headerLine parallax MainBannerImg" id="mainImg">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-md-offset-6">
+          <h1>References </h1>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end mainImg-->
+  
+  <section class="aboutneolife_details paragraphs">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div>
+            <p>Daily Carotenoid Complex </p>
+            <ol>
+              <li>Carughi, A & Hooper. FG Plasma carotenoid concentrations before and after supplementation with a carotenoid mixture. Annuls of the New York Academy of Sciences, Vol. 691: 244-245, 1993.<br>
+                Get full study (PDF, 6.6MB) </li>
+              <li>Carughi, A & Hooper. FG Plasma carotenoid concentrations before and after supplementation with a carotenoid mixture. American Journal of Clinical Nutrition, Vol. 59 (4): 896-899, 1994.
+                Get full study (PDF, 6.6MB)
+                
+                Dixon, ZR, </li>
+              <li>Burri, BJ, Clifford, A, Frankel, EN, Schneeman, BO, Parks, E, Keim, NL, Barbieri, T, Wu, M, Fong, AKH, Kretsch, MJ, Sowell, AL, Erdman JW. Effects of a carotene-deficient diet on measures of oxidative susceptibility and superoxide dismutase activity in adult women. Free Radical Biology and Medicine. Vol. 17 (6): 537-544, 1994. </li>
+              <li>Dixon, ZR, Shie, FS, Warden, BA and Burri, BJ. Effect of Low Carotene Diet on Malondialdehyde (MDA) Concentration. FASEB J. 10:A240, 1996. </li>
+              <li>Dixon ZR; Shie FS; Warden BA; Burri BJ; Neidlinger TR. The effect of a low carotenoid diet on malondialdehyde-thiobarbituric acid (MDA-TBA) concentrations in women: a placebo-controlled double-blind study. Journal of the American College of Nutrition, Feb 1998, Volume 17(1):54-8. </li>
+              <li>Kramer, TR, Burri, BJ, and Neidlinger, TR. Carotenoid/Flavonoid Modulated Immune Response in Women, USDA Beltsville, Human Nutrition Research Center, San Francisco, California. Proceedings of the annual meeting of Professional Research Scientists Federation of American Societies of Experimental Biology. 9-13 April 1995. </li>
+              <li>Kramer TR; Burri BJ. Modulated mitogenic proliferative responsiveness of lymphocytes in whole-blood cultures after a low-carotene diet and mixed-carotenoid supplementation in women. American Journal of Clinical Nutrition. Vol. 65(3): 871-875, Mar. 1997.
+                Get full study (PDF, 4MB) </li>
+              <li>Carughi, A., Omaye, S., Furst, A., Plasma Carotenoid response to supplementation with a mix of vegetable extracts. Proceedings of Experimental Biology, March 31-April 4, 2001. Get Abstracts (PDF, 952K) </li>
+            </ol>
+            <p>Carotenoids and Immunity </p>
+            <ol>
+              <li>Hughes, D. A., Effects of dietary antioxidants on the immune function of middle-aged adults. Proceedings of the nutrition society, (1999), 58, pp 79-84.</li>
+              <li>Lesourd, B., Mazari, L., Nutrition and immunity in the elderly. Proceedings of the nutrition society, (1999), 58, pp 685-695. </li>
+              <li>Erickson, K. L., Medina, E. A., Hubbard, N. E., Micronutrients and Innate Immunity. The Journal of infectious diseases (2000), 182 (suppl); s5-10. </li>
+              <li>Chandra, R. K., Nutrition and the immune system: an introduction. The American Journal of Clinical Nutrition, (1997) Vol 66, pp460-463. </li>
+              <li>Scrimshaw, N. S., SanGiovanni J. P., Synergism of nutrition, infection, and immunity: an overview. The American Journal of Clinical Nutrition, Vol 66: 464S-477s. </li>
+              <li>Lesourd, B. M., Nutrition and immunity in the elderly: modification of immune responses with nutritional treatments. The American Journal of Clinical Nutrition, Vol 66: 478s-484s. </li>
+              <li>Hughes, D. A., et al, Effects of lycopene and Lutein supplementation on the expression of functionally associated surface molecules on blood monocytes from healthy male nonsmokers. The Journal of Infectious Diseases, 2000, 182 (suppl 1):S11-5. </li>
+              <li>Slattery, M. L., Carotenoids and colon cancer. The American Journal of Clinical Nutrition, 2000, Vol 71, No 2, 575-582. </li>
+              <li>Toniolo, P., et al, Serum carotenoids and breast cancer. American Journal of Epidemiology, 2001, Vol 153: 1142-1147. </li>
+              <li>Hughes, D. A., Effects of carotenoids on human immune function. Proc Nutr Soc. 1999, Aug;58 713-718. </li>
+              <li>Hughes, D. A., et al, Effects of beta-carotene supplementation on the immune function of blood monocytes from healthy male nonsmokers. J Lab Clin Med. 1997, (129) 309-317. </li>
+              <li>Nishino, H., Cancer prevention by carotenoids. Mutat Res. 1998 (402) 159-163. </li>
+              <li>Bendich, A., Carotenoids and the immune response. J. Nutr. 1989: 119, 112-115. </li>
+            </ol>
+            <p>Specific Nutrients & Health </p>
+            <ol>
+              <li>Ferro-Luzzi, A., Cialfa, E., Leclercq, C., Toti, E., The Mediterranean diet revisited. Focus on fruit and vegetables. International Journal of Food Sciences and Nutrition 1994, (45) pp 291-300. </li>
+              <li>Lampe, J. W., Health effects of vegetables and fruit: assessing mechanisms of action in human experimental studies. The American Journal of Clinical Nutrition, 1999, Vol 70, No 3, pp 475-490. </li>
+              <li>Inserra, P., et al, Immune function improves during fruit and vegetable extract supplementation. Molecular Biology of the Cell 1998, (9) p182. </li>
+              <li>Osler, M., et al, Food intake patterns, self rated health and mortality in Danish men and women. A prospective study. Journal of Epidemiology & Community Health 2001, June (6) pp399-403. </li>
+              <li>Simin, L., et al, Intake of vegetables rich in carotenoids and risk of coronary heart disease in men: The Physicians' Health Study. International Journal of Epidemiology, 2001, 30; pp130-135. </li>
+              <li>Michels, K. B., Wolk, A., A prospective study of healthy foods and mortality in women. American Journal of Epidemiology, 2001, June, pp S250. </li>
+            </ol>
+            <p>Food Intake & Health Status </p>
+            <ol>
+              <li>Harbige, L. Z., Nutrition and immunity with emphasis on infection and autoimmune disease. Nutr. Health, 1996; 10 (4) 285-312. </li>
+              <li>Bogden, J. D., Louria, D. B., Aging and the immune system: the role of micronutrient nutrition. Nutrition, 1999; 15 (7-8) 593-595. </li>
+              <li>Hannigan, B. M., Diet and immune function. BR J Biomed Sci., 1994, (51) 252-259. </li>
+              <li>Chandra, R., Nutrition and immunity in the elderly: clinical significance. Nutr Rev. 1995, 53, S80-83. </li>
+              <li>Bradley, J., Xu, X., Diet, age, and the immune system. Nutr Rev. 1996, 54, S43-506.</li>
+              <li> Hughes, D. A., Effects of dietary antioxidants on the immune function of middle-aged adults. Proc Nutr Soc. 199, Feb, 58: pp70-84. </li>
+              <li>Meydani, M. et al, The effect of long-term dietary supplementation with antioxidants. Ann NY Acad Sci. 1998, Nov 20:854, pp352-360. </li>
+              <li>Rogers, A. E., Newberne, P. M., Nutrition and immunological responses. Cancer Detect Prev Suppl. 1987, 1: pp1-14. </li>
+              <li>Chandra, R. K., Nutrition, immunity and infection: from basic knowledge of dietary manipulation of immune responses to practical application of ameliorating suffering and improving survival. Proc Natl Acad Sci. 1996, Dec 10, pp14304-14307. </li>
+              <li>Meydani, M., Dietary antioxidants modulation of aging and immune-endothelial cell interaction. Mech Ageing Dev. 1999, Nov (111) pp123-132. </li>
+              <li>Langseth, L., Nutrition And Immunity In Man. International Life Sciences Institute Concise Monograph Series.</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end defendyourcells_details--> 
+</div><!-- #BeginLibraryItem "/Library/footer.lbi" -->
+  <footer>
+  <div class="container">
+   <div class="row">
+    <div class="col-md-6">
+      <h4>About NeoLife</h4>
+      <small>We are a global health and wellness company committed to helping people take control of their health, not only physically but also financially. With over 50 years of experience, and currently operating in over 50 countries, we offer peace of mind that the success you build with our family is one you can pass down to future generations.</small>
+      <p>
+      <a href="http://www.shareneolife.com/" target="_blank"><img src="http://static.gnld.com.s3.amazonaws.com/us/neolifeblog/images/btn_visitSite.png" style="width:220px;padding-top:10px;"></a>
+	  </p>
+    </div>
+    <div class="col-md-6">
+      <h4>Contact Us</h4>
+      <small>Email us for any general questions that you may have. </small>
+      <h4><i class="fa fa-phone" aria-hidden="true"></i> 800.432.5842</h4>
+      <h4><i class="fa fa-envelope-o" aria-hidden="true"></i> <a href="mailto:info@neolife.com">info@neolife.com</a></h4>
+      <div class="socialMedia">
+<a href="https://www.facebook.com/NeoLifeCLub" target="_blank"><img src="http://static.gnld.com.s3.amazonaws.com/content/emails/neolifeclubimg/icon_facebook_black.png" alt="" width="22" border="0" hspace="4"></a><a href="http://www.youtube.com/neolifeclub" target="_blank"><img src="http://static.gnld.com.s3.amazonaws.com/content/emails/neolifeclubimg/icon_youtube_black.png" alt="" width="22" border="0" hspace="4"></a><a href="http://www.twitter.com/neolifeclub" target="_blank"><img src="http://static.gnld.com.s3.amazonaws.com/content/emails/neolifeclubimg/icon_twitter_black.png" alt="" width="22" border="0" hspace="4"></a><a href="http://www.instagram.com/officialneolife" target="_blank"><img src="http://static.gnld.com.s3.amazonaws.com/content/emails/neolifeclubimg/icon_instagram_black.png" alt="" width="22" border="0" hspace="4"></a>
+</div>
+    </div>
+  </div>
+  </div>
+  </footer>
+<div class="copyright text-center">© 2017 Neolife International</div>
+<div class="scroll-top-wrapper"> <span class="scroll-top-inner"> <i class="fa fa-2x fa-arrow-circle-up"></i></span></div><!-- #EndLibraryItem --></body>
+</html>

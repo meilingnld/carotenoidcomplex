@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NeoLife Carotenoid Complex</title>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="/js/jquery-1.11.3.min.js"></script>
+<script src="/js/jquery.easing.min.js"></script>
+<script src="/js/jquery.royalslider.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="/js/bootstrap.js"></script>
+<script src="/js/scripts.js"></script>
+<!-- Bootstrap -->
+<link href="/css/bootstrap.css" rel="stylesheet">
+<link href="/css/animate.css" rel="stylesheet">
+<link href="/css/fonts.css" rel="stylesheet">
+<link href="/css/style.css" rel="stylesheet">
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body data-view="faqs/"><!-- #BeginLibraryItem "/Library/header.lbi" -->
+<div class="nav-wrapper">
+  <header id="Top" class="affix-top">
+    <nav class="navbar navbar-default" role="navigation">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#defaultNavbar1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+          <div class="logo"> 
+            <!--remember to change this when transfer to actural server--> 
+            <!--href="/"--> 
+            <a href="/"><img src="https://www.neolife.com/static/responsive/images/logo.svg"></a></div>
+        </div>
+        <div class="collapse navbar-collapse" id="defaultNavbar1"> 
+          <!--div class="collapse navbar-collapse" id="navbar-collapse-main"-->
+          <ul class="nav navbar-nav navbar-right">
+            <li role="presentation" data-view-section="whycarotenoidcomplex"> <a href="/whycarotenoidcomplex/">Why Carotenoid Complex</a> </li>
+            <li role="presentation" data-view-section="clinicallyproven"> <a href="/clinicallyproven/clinicallyproven/">Clinically Proven</a>
+              <section class="subNav clearfix">
+                <ul class="navbar-right">
+                  <li role="presentation"data-view-sub-section="clinicallyproven/clinicallyproven"> <a href="/clinicallyproven/clinicallyproven/">Clinically Proven</a></li>
+                  <li data-view-sub-section="clinicallyproven/theimmunesystem"><a href="/clinicallyproven/theimmunesystem/">The Immune System</a></li>
+                  <li data-view-sub-section="clinicallyproven/firstlineofdefense"><a href="/clinicallyproven/firstlineofdefense/">First Line of Defense</a></li>
+                  <li data-view-sub-section="clinicallyproven/carotenoidimmunity"><a href="/clinicallyproven/carotenoidimmunity/">Carotenoid and Immunity</a></li>
+                  <li data-view-sub-section="clinicallyproven/defendyourcells"><a href="/clinicallyproven/defendyourcells/">Defend Your Cells</a></li>
+                  <li data-view-sub-section="clinicallyproven/protectyourheart"><a href="/clinicallyproven/protectyourheart/">Protect Your Heart</a></li>
+                </ul>
+              </section>
+            </li>
+            <li role="presentation" data-view-section="stories"> <a href="/stories/stories/">Stories</a>
+              <section class="subNav clearfix">
+                <ul class="navbar-right">
+                  <li role="presentation" data-view-sub-section="stories/stories"> <a href="/stories/stories/">Stories</a></li>
+                  <li data-view-sub-section="stories/wholefoodadvantage"><a href="/stories/wholefoodadvantage/">Whole Food Advantage</a></li>
+                  <li data-view-sub-section="stories/naturesblueprint"><a href="/stories/naturesblueprint/">Nature's Blue Print</a></li>
+                </ul>
+              </section>
+            </li>
+            <li role="presentation" data-view-section="researchresources"> <a href="/researchresources/researchresources/">Research & Resources</a>
+              <section class="subNav clearfix">
+                <ul class="navbar-right">
+                  <li role="presentation" data-view-sub-section="researchresources/researchresources"> <a href="/researchresources/researchresources/">Research & Resources</a></li>
+                  <li data-view-sub-section="researchresources/bioavailability"><a href="/researchresources/bioavailability/">Bioavailability</a></li>
+                  <li data-view-sub-section="researchresources/strongerec"><a href="/researchresources/strongerec/">Stronger than E & C</a></li>
+                  <li data-view-sub-section="researchresources/references"><a href="/researchresources/references/">References</a></li>
+                </ul>
+              </section>
+            </li>
+            <li role="presentation" data-view-section="expertopinions" > <a href="/expertopinions/expertopinions/">Expert Opinions</a>
+              <section class="subNav clearfix">
+                <ul class="navbar-right">
+                  <li role="presentation" data-view-sub-section="expertopinions/expertopinions" > <a href="/expertopinions/expertopinions/">Expert Opinions</a></li>
+                  <li data-view-sub-section="expertopinions/popularpress"><a href="/expertopinions/popularpress/">Popular Press</a></li>
+                  <li data-view-sub-section="expertopinions/sab"><a href="/expertopinions/sab/">Scientific Advisory Board</a></li>
+                </ul>
+              </section>
+            </li>
+            <li role="presentation" data-view-section="aboutneolife"> <a href="/aboutneolife/">About NeoLife</a> </li>
+          </ul>
+          <script type="text/javascript">
+   $( document ).ready(function() {
+      var parts = $('body').data('view').split('/'),
+          section  = parts[0],
+          sub_section = parts.slice(0,2).join('\\/');
+          //remember to change this when transfer to actural server//
+	      //section  = parts[0],
+          //sub_section = parts.slice(0,2).join('\\/');
+	      
+          $('li[data-view-section='+section+']').addClass('active');
+          $('li[data-view-sub-section='+sub_section+']').addClass('active');
+    });
+  </script> 
+        </div>
+      </div>
+    </nav>
+  </header>
+</div>
+<!-- #EndLibraryItem --><div class="faqs wrapper">
+  <section class="headerLine parallax MainBannerImg" id="mainImg">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h1 class="text-center">FAQs</h1>
+            
+            
+            
+            
+            
+            
+            
+            <div class="panel-group events whiteBG" id="accordion1" role="tablist" aria-multiselectable="true">
+            <article class="panel">
+              <h2 class="ti-minus collapsed btnAccor" role="button" data-toggle="collapse" data-parent="#accordion1" href="#collapseA1" aria-expanded="true" aria-controls="collapseA1">Why do I need a carotenoid supplement?</h2>
+              <div id="collapseA1" class="collapse" role="tabpanel" aria-labelledby="heading2">
+                <div class="eventItem clearfix">
+                  <p>
+
+If you don't eat the recommended 5-9 servings of fruits and vegetables every day, chances are you are not getting the recommended amount of carotenoids in your daily diet. Most people only get 2-3 servings of fruits and vegetables daily and most of the top ten fruits and vegetables are poor sources of carotenoids.</p><p>
+
+Plus, even those that do eat the recommended amounts of fruits and vegetables every day are not getting the amount of carotenoids found in a serving of Carotenoid Complex.
+ </p>
+                </div>
+              </div>
+            </article>
+              <!-- /.article-->
+            <article class="panel">
+              <h2 class="ti-minus collapsed btnAccor" role="button" data-toggle="collapse" data-parent="#accordion1" href="#collapseA2" aria-expanded="true" aria-controls="collapseA2">Can I get enough carotenoids from my diet alone? </h2>
+              <div id="collapseA2" class="collapse" role="tabpanel" aria-labelledby="heading2">
+                <div class="eventItem clearfix">
+                  <p>If you want the best antioxidant protection for your body, <a href="/stories/wholefoodadvantage/" target="_self">it would be extremely difficult to eat enough fruits and vegetables</a>. GNLD stresses that it is vital that you follow a diet that is rich in fruits and vegetables, but we also know that most of the fruits and vegetables that we do eat, like bananas and potatoes, are not good sources of carotenoids. In addition, the bioavailability of carotenoids in uncooked fruits and vegetables is extremely poor. Raw carrots are only about 5-10% bioavailable in their carotenoid content. In comparison, the carotenoids in Carotenoid Complex are up to 95% bioavailable.</p>
+                </div>
+              </div>
+              <!-- /.article-->
+            </article>
+            <!-- /.article-->
+            <article class="panel">
+              <h2 class="ti-minus collapsed btnAccor" role="button" data-toggle="collapse" data-parent="#accordion1" href="#collapseA3" aria-expanded="true" aria-controls="collapseA3">From where does NeoLife source its fish oil?</h2>
+              <div id="collapseA3" class="collapse" role="tabpanel" aria-labelledby="heading2">
+                <div class="eventItem clearfix">
+                  <p> All of the fish used in our products come from either the pristine waters of the North Atlantic or Pacific Oceans. </p>
+                  <p> NeoLife’s stringent standards for purity, potency and consistency have long been a hallmark for our company. During the raw material selection and validation processes geographic origin of ingredients such as fish is one of many criteria used to assure NeoLife Nutritionals are the finest, safest and most effective products they can be. Our relentless commitment to outstanding quality results in products you, your family and everyone you care about can trust for a lifetime. </p>
+                  <p>It has come to our attention that an issue has arisen within the media concerning where some companies get the fish used to make their omega-3 fatty acid supplements. In particular this concern relates to fishes caught in the waters off coastal Africa. You can be assured that none of the ingredients used in NeoLife omega-3 supplements are sourced from that part of the world. </p>
+                </div>
+                <!-- /.collapse -->
+              </div>
+              <!-- /.panel -->
+            </article>
+            <!-- /.article-->
+            <article class="panel">
+              <h2 class="ti-minus collapsed btnAccor" role="button" data-toggle="collapse" data-parent="#accordion1" href="#collapseA4" aria-expanded="true" aria-controls="collapseA4">Why doesn’t NeoLife have a krill oil product?</h2>
+              <div id="collapseA4" class="collapse" role="tabpanel" aria-labelledby="heading2">
+                <div class="eventItem clearfix">
+                  <p> The NeoLife Scientific Advisory Board looked at krill as a potential omega-3 source years ago and ultimately rejected the idea for several reasons, including potency, sustainability and environmental appropriateness. </p>
+                  <p> Regarding this last (and very important) point, it's our opinion that large scale krill harvesting by humans is an environmental disaster in the making.&nbsp; Krill are naturally part of the food chain, but are not part of the human food supply.&nbsp; We do not eat them....we do eat other things that eat them...which is the natural order of the food chain that supports us and our fabulous biodiversity. When we start harvesting krill we are in effect stealing the food supply of other creatures. </p>
+                </div>
+                <!-- /.collapse -->
+              </div>
+              <!-- /.panel -->
+            </article>
+            <!-- /.article-->
+            <article class="panel">
+              <h2 class="ti-minus collapsed btnAccor" role="button" data-toggle="collapse" data-parent="#accordion1" href="#collapseA5" aria-expanded="true" aria-controls="collapseA5">Is soy safe? </h2>
+              <div id="collapseA5" class="collapse" role="tabpanel" aria-labelledby="heading2">
+                <div class="eventItem clearfix">
+                  <p> You can be assured that the soy ingredients used in NeoLife nutritionals are completely safe and appropriate for human consumption. <br>
+                    Soy products, considered a staple in many countries, have been safely consumed for centuries. In fact, since 1999, most experiments not only conclude that consumption of soybean products and components is not harmful, but demonstrate that soy foods provide various health benefits. Hundreds of studies have associated soy with positive effects in human health, including digestive, bone, and cardiovascular, neurological and anti-carcinogenic benefits. The benefits are so well established that several of the Key Recommendations from the 2010 Dietary Guidelines for Americans (released by the USDA and United States Department of Health and Human Services, January 2011) recommend the consumption of soy-based products as part of a healthy diet.</p>
+                  <p>"The truth about soy" Audio by SAB Director, John Miller, is available in the NeoLife Back Office. Login from <a href="http://office.neolife.com" target="_blank">office.neolife.com</a>, tools &gt; product &gt; media/more.</p>
+                </div>
+                <!-- /.collapse -->
+              </div>
+              <!-- /.panel -->
+            </article>
+            <!-- /.article-->
+            <article class="panel">
+              <h2 class="ti-minus collapsed btnAccor" role="button" data-toggle="collapse" data-parent="#accordion1" href="#collapseA6" aria-expanded="true" aria-controls="collapseA6">What if I have questions about an existing medical condition?</h2>
+              <div id="collapseA6" class="collapse" role="tabpanel" aria-labelledby="heading2">
+                <div class="eventItem clearfix">
+                  <p>If you have an existing medical condition, please consult your physician when adding to your supplement program.</p>
+                </div>
+                <!-- /.collapse -->
+              </div>
+              <!-- /.panel -->
+            </article>
+            <!-- /.article-->
+            <article class="panel">
+              <h2 class="ti-minus collapsed btnAccor" role="button" data-toggle="collapse" data-parent="#accordion1" href="#collapseA7" aria-expanded="true" aria-controls="collapseA7">Does NeoLife do animal testing?</h2>
+              <div id="collapseA7" class="collapse" role="tabpanel" aria-labelledby="heading2">
+                <div class="eventItem clearfix">
+                  <p> NeoLife does not do nor cause to be done any animal testing where pain and/or suffering are involved. <br>
+                    In fact, we have actively supported the development of alternative non-animal test procedures. In this vein, our own Scientific Advisory Board member Dr. Arthur Furst developed and conducted research into procedures that would allow earthworms to be substituted for lab animals in toxicity testing. </p>
+                  <p> Of course, the most compelling testing is often that which is performed using human subjects. Though more difficult and expensive, whenever practical we use human volunteers; some examples include carotenoid blood level tests for Carotenoid Complex, our GR2 Control Weight Loss program and Salmon Oil Plus. <br>
+                    NeoLife is a research oriented nutrition company. By its nature, research that uses animals is sometimes needed.&nbsp; For example, to determine the health and growth benefit of a nutritional supplement for pets (such as our product Pet Pals in the US), you must feed the product to a living, breathing, growing animal. </p>
+                  <p> These types of “feeding studies” provide important information, such as effect of nutrients on coat, hair growth, skin condition, overall health, weight gain or loss, etc.&nbsp; These types of studies are conducted without causing the animals any pain or suffering, and in fact, if using larger animals such as dogs, would more than likely be conducted at a licensed kennel, in an atmosphere where the animals would be protected, cared for, and loved. </p>
+                  <p>NeoLife and the Scientific Advisory Board have been concerned about the plight of research animals for decades.&nbsp; We have been, and remain, staunch advocates of protecting animals from such pain and suffering, and were doing so long before it became as fashionable as it is today. We also know that many people need to associate themselves with companies and products they can trust. We take the trust of our Distributors and customers concerning this issue very seriously. </p>
+                </div>
+                <!-- /.collapse -->
+              </div>
+              <!-- /.panel -->
+            </article>
+            <!-- /.article-->
+            <article class="panel">
+              <h2 class="ti-minus collapsed btnAccor" role="button" data-toggle="collapse" data-parent="#accordion1" href="#collapseA8" aria-expanded="true" aria-controls="collapseA8">Are NeoLife Nutritionals gluten free?</h2>
+              <div id="collapseA8" class="collapse" role="tabpanel" aria-labelledby="heading2">
+                <div class="eventItem clearfix">
+                  <p> A majority of NeoLife Nutritionals are gluten free, some are not.&nbsp; A list of products meeting the gluten free requirements as set forth by the US Food &amp; Drug Administration can be obtained from Distributor Services. </p>
+                </div>
+                <!-- /.collapse -->
+              </div>
+              <!-- /.panel -->
+            </article>
+            <!-- /.article-->
+            <article class="panel">
+              <h2 class="ti-minus collapsed btnAccor" role="button" data-toggle="collapse" data-parent="#accordion1" href="#collapseA9">What is the natural source of NeoLife CoQ10?</h2>
+              <div id="collapseA9" class="collapse" role="tabpanel" aria-labelledby="heading2">
+                <div class="eventItem clearfix">
+                  <p>NeoLife CoQ10 is one of our latest breakthrough products. It uses the most advanced biogenic technologies to provide natural, pharmaceutical grade CoQ10, delivered in a highly bioavailable form. This biogenic production process uses carbohydrates sourced from whole grains. </p>
+                </div>
+                <!-- /.collapse -->
+              </div>
+              <!-- /.panel -->
+            </article>
+            <!-- /.article-->
+            <article class="panel">
+              <h2 class="ti-minus collapsed btnAccor" role="button" data-toggle="collapse" data-parent="#accordion1" href="#collapseA10">Are NeoLife products safe for professional athletes?</h2>
+              <div id="collapseA10" class="collapse" role="tabpanel" aria-labelledby="heading2">
+                <div class="eventItem clearfix">
+                  <p>NeoLife wants to assure all of our customers, athletes, coaches, and athletic directors that our Nutritional Supplements are safe and legal for all athletes to use. We use the finest whole food based ingredients and for over 50 years, elite athletes around the world have put their trust in NeoLife for nutrition to help fuel gold medal success!</p>
+                  <p>NeoLife Nutritionals, including our vitamin, mineral, protein, and phytonutrient supplements, are guaranteed to be free of any substance currently banned by the National Collegiate Athletic Association, International Olympic Committee, and World Anti-Doping Agency. </p>
+                  <p>It should be noted, however, that athletes participating in or likely to participate in, anti-doping testing should only use NeoLife Herbal products and NeoLifeTea with caution. Though none of the ingredients are listed as “banned” substances, and safety is not an issue, herbal ingredients can break down into many different compounds in the body, and there is some risk that they may produce a “false-positive” result on a drug test; and although not prohibited caffeine is monitored by WADA for potential abuse. </p>
+                  <p>It should also be noted that governing bodies for international sports may have additional substances which are banned. Athletes must determine for themselves if any ingredient in any NeoLife product is banned.</p>
+                  <p><strong>At NeoLife, we believe that all athletes need to be concerned not only with the legality of using supplements, but of their safety and health benefits. NeoLife Nutritional Supplements have a long history of safe and effective use. We always put safety and efficacy first and would never risk the health of an athlete, or their career. </strong></p>
+                </div>
+                <!-- /.collapse -->
+              </div>
+              <!-- /.panel -->
+            </article>
+            <!-- /.article-->
+          </div>
+           
+           
+           
+           
+           
+            
+          </div>
+        </div>
+      </div>
+  </section>
+  <!-- end mainImg-->
+
+
+</div><!-- #BeginLibraryItem "/Library/footer.lbi" -->
+  <footer>
+  <div class="container">
+   <div class="row">
+    <div class="col-md-6">
+      <h4>About NeoLife</h4>
+      <small>We are a global health and wellness company committed to helping people take control of their health, not only physically but also financially. With over 50 years of experience, and currently operating in over 50 countries, we offer peace of mind that the success you build with our family is one you can pass down to future generations.</small>
+      <p>
+      <a href="http://www.shareneolife.com/" target="_blank"><img src="http://static.gnld.com.s3.amazonaws.com/us/neolifeblog/images/btn_visitSite.png" style="width:220px;padding-top:10px;"></a>
+	  </p>
+    </div>
+    <div class="col-md-6">
+      <h4>Contact Us</h4>
+      <small>Email us for any general questions that you may have. </small>
+      <h4><i class="fa fa-phone" aria-hidden="true"></i> 800.432.5842</h4>
+      <h4><i class="fa fa-envelope-o" aria-hidden="true"></i> <a href="mailto:info@neolife.com">info@neolife.com</a></h4>
+      <div class="socialMedia">
+<a href="https://www.facebook.com/NeoLifeCLub" target="_blank"><img src="http://static.gnld.com.s3.amazonaws.com/content/emails/neolifeclubimg/icon_facebook_black.png" alt="" width="22" border="0" hspace="4"></a><a href="http://www.youtube.com/neolifeclub" target="_blank"><img src="http://static.gnld.com.s3.amazonaws.com/content/emails/neolifeclubimg/icon_youtube_black.png" alt="" width="22" border="0" hspace="4"></a><a href="http://www.twitter.com/neolifeclub" target="_blank"><img src="http://static.gnld.com.s3.amazonaws.com/content/emails/neolifeclubimg/icon_twitter_black.png" alt="" width="22" border="0" hspace="4"></a><a href="http://www.instagram.com/officialneolife" target="_blank"><img src="http://static.gnld.com.s3.amazonaws.com/content/emails/neolifeclubimg/icon_instagram_black.png" alt="" width="22" border="0" hspace="4"></a>
+</div>
+    </div>
+  </div>
+  </div>
+  </footer>
+<div class="copyright text-center">© 2017 Neolife International</div>
+<div class="scroll-top-wrapper"> <span class="scroll-top-inner"> <i class="fa fa-2x fa-arrow-circle-up"></i></span></div><!-- #EndLibraryItem --></body>
+</html>

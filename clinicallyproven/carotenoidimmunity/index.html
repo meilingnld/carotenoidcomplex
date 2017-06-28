@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NeoLife Carotenoid Complex</title>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="/js/jquery-1.11.3.min.js"></script>
+<script src="/js/jquery.easing.min.js"></script>
+<script src="/js/jquery.royalslider.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="/js/bootstrap.js"></script>
+<script src="/js/scripts.js"></script>
+<!-- Bootstrap -->
+<link href="/css/bootstrap.css" rel="stylesheet">
+<link href="/css/animate.css" rel="stylesheet">
+<link href="/css/fonts.css" rel="stylesheet">
+<link href="/css/style.css" rel="stylesheet">
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body data-view="clinicallyproven/carotenoidimmunity/"><!-- #BeginLibraryItem "/Library/header.lbi" -->
+<div class="nav-wrapper">
+  <header id="Top" class="affix-top">
+    <nav class="navbar navbar-default" role="navigation">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#defaultNavbar1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+          <div class="logo"> 
+            <!--remember to change this when transfer to actural server--> 
+            <!--href="/"--> 
+            <a href="/"><img src="https://www.neolife.com/static/responsive/images/logo.svg"></a></div>
+        </div>
+        <div class="collapse navbar-collapse" id="defaultNavbar1"> 
+          <!--div class="collapse navbar-collapse" id="navbar-collapse-main"-->
+          <ul class="nav navbar-nav navbar-right">
+            <li role="presentation" data-view-section="whycarotenoidcomplex"> <a href="/whycarotenoidcomplex/">Why Carotenoid Complex</a> </li>
+            <li role="presentation" data-view-section="clinicallyproven"> <a href="/clinicallyproven/clinicallyproven/">Clinically Proven</a>
+              <section class="subNav clearfix">
+                <ul class="navbar-right">
+                  <li role="presentation"data-view-sub-section="clinicallyproven/clinicallyproven"> <a href="/clinicallyproven/clinicallyproven/">Clinically Proven</a></li>
+                  <li data-view-sub-section="clinicallyproven/theimmunesystem"><a href="/clinicallyproven/theimmunesystem/">The Immune System</a></li>
+                  <li data-view-sub-section="clinicallyproven/firstlineofdefense"><a href="/clinicallyproven/firstlineofdefense/">First Line of Defense</a></li>
+                  <li data-view-sub-section="clinicallyproven/carotenoidimmunity"><a href="/clinicallyproven/carotenoidimmunity/">Carotenoid and Immunity</a></li>
+                  <li data-view-sub-section="clinicallyproven/defendyourcells"><a href="/clinicallyproven/defendyourcells/">Defend Your Cells</a></li>
+                  <li data-view-sub-section="clinicallyproven/protectyourheart"><a href="/clinicallyproven/protectyourheart/">Protect Your Heart</a></li>
+                </ul>
+              </section>
+            </li>
+            <li role="presentation" data-view-section="stories"> <a href="/stories/stories/">Stories</a>
+              <section class="subNav clearfix">
+                <ul class="navbar-right">
+                  <li role="presentation" data-view-sub-section="stories/stories"> <a href="/stories/stories/">Stories</a></li>
+                  <li data-view-sub-section="stories/wholefoodadvantage"><a href="/stories/wholefoodadvantage/">Whole Food Advantage</a></li>
+                  <li data-view-sub-section="stories/naturesblueprint"><a href="/stories/naturesblueprint/">Nature's Blue Print</a></li>
+                </ul>
+              </section>
+            </li>
+            <li role="presentation" data-view-section="researchresources"> <a href="/researchresources/researchresources/">Research & Resources</a>
+              <section class="subNav clearfix">
+                <ul class="navbar-right">
+                  <li role="presentation" data-view-sub-section="researchresources/researchresources"> <a href="/researchresources/researchresources/">Research & Resources</a></li>
+                  <li data-view-sub-section="researchresources/bioavailability"><a href="/researchresources/bioavailability/">Bioavailability</a></li>
+                  <li data-view-sub-section="researchresources/strongerec"><a href="/researchresources/strongerec/">Stronger than E & C</a></li>
+                  <li data-view-sub-section="researchresources/references"><a href="/researchresources/references/">References</a></li>
+                </ul>
+              </section>
+            </li>
+            <li role="presentation" data-view-section="expertopinions" > <a href="/expertopinions/expertopinions/">Expert Opinions</a>
+              <section class="subNav clearfix">
+                <ul class="navbar-right">
+                  <li role="presentation" data-view-sub-section="expertopinions/expertopinions" > <a href="/expertopinions/expertopinions/">Expert Opinions</a></li>
+                  <li data-view-sub-section="expertopinions/popularpress"><a href="/expertopinions/popularpress/">Popular Press</a></li>
+                  <li data-view-sub-section="expertopinions/sab"><a href="/expertopinions/sab/">Scientific Advisory Board</a></li>
+                </ul>
+              </section>
+            </li>
+            <li role="presentation" data-view-section="aboutneolife"> <a href="/aboutneolife/">About NeoLife</a> </li>
+          </ul>
+          <script type="text/javascript">
+   $( document ).ready(function() {
+      var parts = $('body').data('view').split('/'),
+          section  = parts[0],
+          sub_section = parts.slice(0,2).join('\\/');
+          //remember to change this when transfer to actural server//
+	      //section  = parts[0],
+          //sub_section = parts.slice(0,2).join('\\/');
+	      
+          $('li[data-view-section='+section+']').addClass('active');
+          $('li[data-view-sub-section='+sub_section+']').addClass('active');
+    });
+  </script> 
+        </div>
+      </div>
+    </nav>
+  </header>
+</div>
+<!-- #EndLibraryItem --><div class="carotenoidimmunity wrapper">
+  <section class="headerLine parallax MainBannerImg" id="mainImg">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-md-offset-6">
+            <h1>Carotenoids and the Immune System</h1>
+			<p>The potent protective benefits of carotenoids start with food, and conclude with the amazing power of carotenoids shown in remarkable studies by USDA researchers. Here's what science tells us about carotenoids and immunity: </p>
+          </div>
+        </div>
+      </div>
+  </section>
+  <!-- end mainImg-->
+
+  <section class="carotenoidimmunity_sec1_details paragraphs">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+        </div>
+        <div class="col-md-6">
+          <div>
+            <h2>Daily Carotenoid Complex</h2>
+            <p>Boosts overall immune function: A USDA study published in The American Journal of Clinical Nutrition (1997) shows that Carotenoid Complex boosts overall immune function by 37% in just 20 days.              </p>
+            <p>Increases natural killer cells: A USDA study showed that Carotenoid Complex boosts the number of natural killer cells by 20% in just 20 days: more than twice the effect measured with beta-carotene alone. </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end xxxxxxxxxx-->
+  
+  
+    <section class="carotenoidimmunity_sec2_details paragraphs">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+        </div>
+        <div class="col-md-6">
+          <div>
+            <h2>Carotenoids & Immunity</h2>
+            <p>A weakened immune system can wreak havoc on your health. Research shows that infections may contribute to heart disease, especially in people with weakened immune systems. Additionally, viruses are linked to some forms of cancer. However, research shows that carotenoids can help strengthen the immune system, thereby reducing the risk of contracting heart disease and cancer. In fact, science not only shows that carotenoids can fight the types of cancer that certain viruses cause, but also shows that the immune system plays a critical role in spontaneous remission of certain cancers, including melanoma. Carotenoids are also shown to provide strong anti-inflammatory benefits (inflammation is a characteristic of autoimmune disorders) in addition to acting as powerful antioxidants, which can strengthen the immune system.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end xxxxxxxxxx-->
+  
+  
+    <section class="carotenoidimmunity_sec3_details paragraphs">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+        </div>
+        <div class="col-md-6">
+          <div>
+            <h2>Specific Nutrients & Health</h2>
+            <p>Excited by early studies indicating certain foods could build a stronger immune system, researchers began to focus on the specific nutrients found in high quantities in many fruits and vegetables. While initial research looked at beta-carotene, later studies revealed an entire family of over 600 related compounds called carotenoids, found in red, orange, yellow, and deep green fruits and vegetables. These amazing compounds are linked to reduced risk of heart disease, cancer, and macular degeneration, an eye disease that causes blindness. Most researchers are quick to suggest that it is preferable to obtain these nutrients from whole foods in order to benefit from the synergistic effects of the carotenoid family.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end xxxxxxxxxx-->
+  
+  
+  
+   <section class="carotenoidimmunity_sec4_details paragraphs">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+        </div>
+        <div class="col-md-6">
+          <div>
+            <h2>Food Intake & Health Status</h2>
+            <p>In order for YOU to build a stronger immune system, it's crucial to consume the recommended 5-9 servings of carotenoid-rich fruits and vegetables daily. For the past several decades, it's become clear to researchers that people who haven't done so experienced a greater risk of disease. Also clear from the research is that those who ate more fruits and vegetables had a lower risk of a wide variety of illnesses. Be aware: surveys of a typical diet consistently show that only about 3% of the population are eating enough of the fruits and vegetables known to provide immune-building benefits. Are you in that 3%? Chances are, probably not!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end xxxxxxxxxx-->
+  
+  
+     <section class="carotenoidimmunity_sec5_details paragraphs">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+        </div>
+        <div class="col-md-6">
+          <div>
+            <p>Other studies of Carotenoid Complex proved that the product is highly bioavailable, reduces oxidation damage to cells by 44% and protects LDL cholesterol in the blood from oxidizing. These findings are important because oxidation contributes to aging, the decline of the immune system, and chronic diseases such as heart disease, cancer, and degenerative diseases of the eyes and nervous system. (references)</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end xxxxxxxxxx-->
+
+</div><!-- #BeginLibraryItem "/Library/footer.lbi" -->
+  <footer>
+  <div class="container">
+   <div class="row">
+    <div class="col-md-6">
+      <h4>About NeoLife</h4>
+      <small>We are a global health and wellness company committed to helping people take control of their health, not only physically but also financially. With over 50 years of experience, and currently operating in over 50 countries, we offer peace of mind that the success you build with our family is one you can pass down to future generations.</small>
+      <p>
+      <a href="http://www.shareneolife.com/" target="_blank"><img src="http://static.gnld.com.s3.amazonaws.com/us/neolifeblog/images/btn_visitSite.png" style="width:220px;padding-top:10px;"></a>
+	  </p>
+    </div>
+    <div class="col-md-6">
+      <h4>Contact Us</h4>
+      <small>Email us for any general questions that you may have. </small>
+      <h4><i class="fa fa-phone" aria-hidden="true"></i> 800.432.5842</h4>
+      <h4><i class="fa fa-envelope-o" aria-hidden="true"></i> <a href="mailto:info@neolife.com">info@neolife.com</a></h4>
+      <div class="socialMedia">
+<a href="https://www.facebook.com/NeoLifeCLub" target="_blank"><img src="http://static.gnld.com.s3.amazonaws.com/content/emails/neolifeclubimg/icon_facebook_black.png" alt="" width="22" border="0" hspace="4"></a><a href="http://www.youtube.com/neolifeclub" target="_blank"><img src="http://static.gnld.com.s3.amazonaws.com/content/emails/neolifeclubimg/icon_youtube_black.png" alt="" width="22" border="0" hspace="4"></a><a href="http://www.twitter.com/neolifeclub" target="_blank"><img src="http://static.gnld.com.s3.amazonaws.com/content/emails/neolifeclubimg/icon_twitter_black.png" alt="" width="22" border="0" hspace="4"></a><a href="http://www.instagram.com/officialneolife" target="_blank"><img src="http://static.gnld.com.s3.amazonaws.com/content/emails/neolifeclubimg/icon_instagram_black.png" alt="" width="22" border="0" hspace="4"></a>
+</div>
+    </div>
+  </div>
+  </div>
+  </footer>
+<div class="copyright text-center">© 2017 Neolife International</div>
+<div class="scroll-top-wrapper"> <span class="scroll-top-inner"> <i class="fa fa-2x fa-arrow-circle-up"></i></span></div><!-- #EndLibraryItem --></body>
+</html>

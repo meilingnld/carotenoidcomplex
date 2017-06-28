@@ -1,0 +1,961 @@
+@charset "UTF-8";
+html {font-size: 1em;}
+
+body {
+  background-color: white;
+  font-family: Helvetica, serif;
+  font-weight: 100;
+  line-height: 1.45;
+  color: #333;
+}
+
+p {
+	margin-bottom: 1.3em;
+	font-size: 1.1em;
+}
+
+h1, h2, h3, h4, h5 {
+  margin: 1.414em 0 0.5em;
+  font-weight: inherit;
+  line-height: 1.414;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 3.998em;
+}
+
+h2 {font-size: 2.827em;}
+
+h3 {font-size: 1.999em;}
+
+h4 {font-size: 1.414em;}
+h5 {font-size: 1.3em;}
+
+small, .font_small {font-size: 0.85em;}
+
+/*-------------------------------------------------*/
+/* ----------header---------- */
+/*-------------------------------------------------*/
+header {
+	z-index: 100;
+}
+.navbar {
+	margin-bottom: 0;
+}
+nav .logo {
+	padding: 12px 0px;
+}
+nav .navbar-header .logo img {
+	height: 47px;
+}
+nav .headerFunction {
+	width: 400px;
+	float: right;
+	position: relative;
+}
+.navbar-default {
+	background: rgba(255,255,255, 0.95);
+}
+.navbar-header {
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
+	color: #333;
+}
+.navbar-default .navbar-nav > li > a {
+	color: #333;
+}
+ul.navbar-nav {
+}
+header nav {
+	position: relative;
+	width: 100%;
+	padding: 0px 10px 0px 10px;
+	z-index: 5;
+}
+header nav ul.nav {
+	list-style: none;
+	padding: 0;
+	margin: 0 auto;/*width:1120px;*/
+}
+header nav ul.nav >li {
+	padding: 0;
+	background: none;
+	display: inline-block;
+	margin: 20px 0px 0px 30px;
+	font: 100 14px/1em Helvetica, Arial, sans-serif;
+	/*letter-spacing:2px;*/
+	/*border: 1px solid white;*/
+	position: static;/*text-transform: uppercase;*/
+}
+header nav ul.nav >li>a, header nav ul.nav li>a:visited {
+	height: 100%;
+	display: inline-block;
+	color: #333;
+	text-decoration: none;
+	padding: 10px 0px 19px 0px;
+	background: none !important;
+	position: relative;
+}
+header nav ul.nav >li >a:before {
+	position: absolute;
+	left: 0;
+	bottom: 15px;
+	content: '';
+	width: 100%;
+	display: block;
+	height: 1px;
+	background: rgba(255, 255, 255, 0);
+}
+header nav ul.nav >li.active >a:before {
+	background: #888;
+}
+header nav ul.nav >li:hover >a, nav#navbar ul.nav >li:hover >a {
+	border-color: transparent;
+	color: #7aac41;
+	text-decoration: none;
+	background: none;
+}
+header nav ul.nav >li .dropdown-menu {
+	box-shadow: none;
+	width: 1120px;
+	top: 100%;
+	left: 0;
+	right: 0;
+	border-radius: 0;
+	margin: 0 auto;
+	padding: 0;
+	border: none;
+	background: #7aac41;
+}
+header nav ul.nav >li.open >a {
+	color: #7aac41;
+}
+header nav ul.nav >li .dropdown-menu li {
+	float: left;
+	display: block;
+	color: #fff;
+	padding: 0px 0px;
+	margin: 0;
+}
+header nav ul.nav >li .dropdown-menu li a {
+	margin: 0;
+	padding: 8px 10px;
+	color: #fff;
+}
+header nav ul.nav >li .dropdown-menu li a:hover {
+	background: #fff;
+	color: #7aac41;
+}
+.navbar-collapse {
+	padding-right: 0px;
+	padding-left: 0px;
+}
+/*
+header.affix nav .headerFunction{
+	width:1px;
+	height:10px;
+	overflow:hidden;
+}
+
+.navbar-collapse {
+padding-left:0;
+padding-right:0;
+}*/
+header nav section.subNav {
+	background: rgba(243,243,243, 1);
+	position: absolute;
+	left: 0;
+	z-index: 30;
+	display: none;
+	width: 100%;
+}
+header nav section.subNav >ul {
+	list-style: none;
+	padding: 0 0 0 20px;
+	margin: 0 auto;
+}
+header nav section.subNav >ul>li {
+	float: left;
+	margin: 0 20px 0 0;
+	padding: 0;
+	display: block;
+	border: none;
+	font-weight: 200;
+}
+header nav section.subNav >ul>li a {
+	display: block;
+	color: #333;
+	text-decoration: none;
+	padding: 12px 0 12px 0;
+}
+header nav ul.nav >li.active > section.subNav {
+	display: block;
+}
+header nav ul.nav >li:hover > section.subNav {
+	z-index: 38;
+}
+header nav section.subNav >ul>li a:hover {
+	color: #7aac41;
+}
+header nav section.subNav >ul>li.active a {
+	color: #7aac41;
+}
+header nav section.subNav >ul>li.qs {
+	background: #dedddb;
+}
+header nav section.subNav >ul>li.qs >a {
+	padding-left: 12px;
+	padding-right: 12px;
+	color: #666;
+	-moz-text-shadow: 0px 0px 10px #555;
+}
+header nav section.subNav >ul>li.qs >a:hover {
+	background: #7aac41;
+	color: #fff;
+}
+header nav section.subNav >ul>li.qs.active {
+	background: #7aac41;
+	color: #fff;
+}
+#formSearch {
+	text-align: right;
+}
+header fieldset .headCart {
+	display: none;
+}
+header fieldset.shopping .headCart {
+	display: inline-block;
+	position: relative;
+	margin: 10px 80px 10px 10px;
+}
+header .headCart span {
+	position: absolute;
+	right: -7px;
+	top: -6px;
+	border-radius: 10px;
+	padding: 0 4px 0 4px;
+	min-width: 19px;
+	height: 19px;
+	background: #cc3333;
+	display: block;
+	font-size: 10px;
+	line-height: 19px;
+	text-align: center;
+	color: #fff;
+}
+header .headCart>img {
+	width: 25px;
+	height: 25px;
+}
+header.affix {
+	animation-name: slideDown2;
+	-webkit-animation-name: slideDown2;
+	animation-duration: 1.7s;
+	-webkit-animation-duration: 1.7s;
+	animation-timing-function: ease;
+	-webkit-animation-timing-function: ease;
+	visibility: visible !important;
+	width: 100%;
+}
+@keyframes slideDown2 {
+ 0% {
+transform: translateY(-100%);
+}
+ 50% {
+transform: translateY(0%);
+}
+ 65% {
+transform: translateY(0%);
+}
+ 80% {
+transform: translateY(0%);
+}
+ 95% {
+transform: translateY(0%);
+}
+ 100% {
+transform: translateY(0%);
+}
+}
+@-webkit-keyframes slideDown2 {
+ 0% {
+-webkit-transform: translateY(-100%);
+}
+ 50% {
+-webkit-transform: translateY(0%);
+}
+ 65% {
+-webkit-transform: translateY(0%);
+}
+ 80% {
+-webkit-transform: translateY(0%);
+}
+ 95% {
+-webkit-transform: translateY(0%);
+}
+ 100% {
+-webkit-transform: translateY(0%);
+}
+}
+header.affix nav {
+}
+header.affix nav .navbar-collapse {
+}
+header.affix nav .navbar-collapse .in {
+	width: 100%;
+	margin-left: 0px;
+	margin-top: -50px;
+	float: left;
+}
+header.affix nav ul.nav>li {
+	margin-left: 30px;
+}
+header.affix .select {
+	display: none;
+}
+header.affix nav .logo img {
+}
+header nav ul.nav li.active >a, nav#navbar ul.nav >li.active >a, header nav ul.nav >li.active >a:hover, nav#navbar ul.nav >li.active >a:hover {
+	border-color: #888;
+	color: #888;
+	background: none;
+}
+header.affix nav .headerFunction {
+	width: 200px;
+}
+.nav-wrapper {
+	min-height: 70px;
+}
+/*-------------------------------------------------*/
+/* ----------Footer---------- */
+/*-------------------------------------------------*/
+
+footer {
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+	border-top: 1px solid rgba(0, 0, 0, 0.1);
+	padding-top:30px;
+	padding-bottom:30px;
+}
+footer h4{
+	margin-top:.7em;
+}
+.copyright {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+/*-------------------------------------------------*/
+/* ----------General---------- */
+/*-------------------------------------------------*/
+
+.white {
+	color: white !important;
+}
+.whitebox{
+	padding:50px;
+	background:rgba(255,255,255,.8);
+}
+.spacer{
+	height:80px;
+}
+.box{
+	padding:40px;
+}
+.parallax {
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
+}
+.MainBannerImg {
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+}
+.headerLine .top_padding {
+	padding-top: 15%;
+}
+.headerLine h1, .headerLine h3, .headerLine h4 {
+	margin-top: 20px;
+	margin-bottom: 0;
+	line-height: 1.2em;
+}
+.wrapper img {
+	width: 100%;
+}
+.wrapper img.auto {
+	width: auto;
+}
+.wrapper section {
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+.wrapper section.nomargin
+{
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+.jumbotron {
+    background-color: transparent;
+}
+.title .container{
+	padding-left: 5%;
+	padding-right: 5%;
+	height:500px;
+}
+.title .container h2, .title .container h3{
+	display: table-cell; 
+	vertical-align: middle;
+	height:500px;
+	text-shadow: 0px 0px 15px rgba(255, 255, 255, 1);
+}
+
+.paragraphs .container {
+	padding-left: 15%;
+	padding-right: 15%;
+}
+.nav-tabs > li {
+	width: 16.66%;
+}
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+    height:80px;
+	border: 0px;
+}
+nav-tabs > li > a:hover, .nav-tabs > li > a {
+    height:80px;
+}
+.nav-tabs > li > a {
+   background-color:#efefef;
+   margin-right: 0px;
+   border-radius:0px;
+
+}
+.regular_tabs{
+	box-shadow: 0px 0px 10px rgba(0,0,0,.1);
+}
+/* -----------accordion-----------*/
+.events h2 {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 20px;
+	font-weight: 200;
+	border-top: 1px solid #e8e8e8;
+	padding: 15px 0 15px 0;
+	margin: 0;
+	clear: both;
+}
+.events h2:before {
+	color: #7aac41;
+	margin-right: 15px;
+	font-size: 1.2em;
+	display: inline-block;
+}
+.events h2.collapsed:before {
+	content: '\e61a';
+}
+.events h2 small {
+	display: block;
+	padding-bottom: 10px;
+	color: #80c342;
+}
+.events h3 {
+}
+.events .eventItem {
+	margin: 25px 40px 40px 40px;
+}
+.events .eventItem ul>li {
+	display: list-item;
+}
+.events .eventCont {
+	width: 68%;
+	padding-right: 5%;
+	border-right: 1px solid #e8e8e8;
+}
+.events .eventCont2 {
+	width: 27%;
+}
+.panel-group .panel {
+	border: none;
+	border-radius: 0;
+	box-shadow: none;
+	padding: 0;
+	margin: 0;
+}
+/* -----------scroll to top-----------*/
+
+.scroll-top-wrapper {
+	position: fixed;
+	opacity: 0;
+	visibility: hidden;
+	overflow: hidden;
+	text-align: center;
+	z-index: 99999999;
+	background-color: #777777;
+	color: #eeeeee;
+	width: 50px;
+	height: 48px;
+	line-height: 35px;
+	right: 30px;
+	bottom: 30px;
+	padding-top: 2px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+}
+.scroll-top-wrapper:hover {
+	background-color: #888888;
+}
+.scroll-top-wrapper.show {
+	visibility: visible;
+	cursor: pointer;
+	opacity: 1.0;
+}
+.scroll-top-wrapper .scroll-top-inner {
+	text-align: center;
+}
+.scroll-top-wrapper i.fa {
+	line-height: 44px;
+	margin-right: 0px;
+	font-size: 2.5em;
+}
+/* ----------no-gutters---------- */
+.row.no-gutters {
+	margin-right: 0;
+	margin-left: 0;
+}
+.row.no-gutters > [class^="col-"], .row.no-gutters > [class*=" col-"] {
+	padding-right: 0;
+	padding-left: 0;
+}
+/* ----------team-member---------- */
+.team-member {
+	text-align: center;
+	margin-bottom: 50px;
+	padding: 10px 30px;
+}
+.team-member img {
+	margin: 0 auto;
+	border: 5px solid #fff;
+}
+.team-member h4 {
+	margin-top: 25px;
+	margin-bottom: 0;
+	text-transform: none;
+	font-weight: bold;
+}
+.team-member p {
+	margin-top: 0
+}
+/* ----------Modal---------- */
+.modal-backdrop.in {
+	filter: alpha(opacity=7);
+	opacity: 0.7;
+}
+.modal-header h4 {
+	font-size: 40px;
+	color: #fff;
+}
+.modal-content {
+	background: rgba(255, 255, 255, 1);
+	border: 0;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+.modal-body {
+	padding: 35px;/*background: #fff none repeat scroll 0 0;*/
+}
+.modal-header .modal-footer {
+	border: 0;
+}
+.modal-header {
+	padding: 25px 25px 15px 25px;
+	background: rgba(179, 179, 179, 1);
+}
+.modal-header .close {
+	/*float: none;*/
+	margin: 0;
+	font-size: 36px;
+	color: #fff;
+	font-weight: 300;
+	opacity: 1;
+}
+.modal-dialog .btnClose {
+	position: absolute;
+	right: 0;
+	top: 0px;
+	z-index: 30;
+}
+/*-------------------------------------------------*/
+/* ----------Home Page---------- */
+/*-------------------------------------------------*/
+.home .headerLine {
+	background-image: url(http://static.gnld.com.s3.amazonaws.com/us/carotenoid/images/main_home.jpg);
+}
+/*-------------------------------------------------*/
+/* ----------clinically proven Page---------- */
+/*-------------------------------------------------*/
+
+
+.clinicallyproven .headerLine {
+	background-image: url(http://static.gnld.com.s3.amazonaws.com/us/carotenoid/images/main_home.jpg);
+}
+.clinicallyproven .clinically_details {
+	background-image: url(http://media.istockphoto.com/photos/beautiful-sunrise-in-san-quirico-dorcia-tuscany-italy-picture-id508070991?s=2048x2048);
+	height: 100vh;
+}
+/*-------------------------------------------------*/
+/* ----------the immune system Page---------- */
+/*-------------------------------------------------*/
+
+
+.theimmunesystem .headerLine {
+	background-image: url(http://static.gnld.com.s3.amazonaws.com/us/carotenoid/images/main_theimmunesystem.jpg);
+}
+.theimmunesystem .theimmunesystem_details {
+	background-image: url(http://media.istockphoto.com/photos/beautiful-sunrise-in-san-quirico-dorcia-tuscany-italy-picture-id508070991?s=2048x2048);
+	height: 100vh;
+}
+/*-------------------------------------------------*/
+/* ----------first line of defense Page---------- */
+/*-------------------------------------------------*/
+
+
+.firstlineofdefense .headerLine {
+	background-image: url(http://static.gnld.com.s3.amazonaws.com/us/carotenoid/images/main_home.jpg);
+}
+.firstlineofdefense .firstlineofdefense_details {
+	background-image: url(http://media.istockphoto.com/photos/beautiful-sunrise-in-san-quirico-dorcia-tuscany-italy-picture-id508070991?s=2048x2048);
+	height: 100vh;
+}
+/*-------------------------------------------------*/
+/* ----------stories Page---------- */
+/*-------------------------------------------------*/
+
+.stories .headerLine {
+	background-image: url(http://static.gnld.com.s3.amazonaws.com/us/carotenoid/images/main_story.jpg);
+	background-position: center top;
+}
+
+.story_chart{
+	height: 850px;
+	background-color:#f8f6f5;
+	padding:10px 50px !important;
+}
+.story_chart h3, .vertical_tabs h3{
+	color:#fb8c34;
+}
+.story_chart ul .ti-check, .vertical_tabs ul .ti-check{
+	color:#70c342;
+}
+.story_chart ul .ti-close, .vertical_tabs ul .ti-close{
+	color:#c34542;
+}
+.story_chart ul li h3, .vertical_tabs ul li h3, .vertical_tabs ul li p{
+	margin-top:0.5em;
+}
+.story_chart ul, .vertical_tabs ul{
+	padding-left:10px;
+}
+.story_chart_list{
+	border:1px solid #efefef;
+}
+/* Style the vertical tab */
+.vertical_tabs div.tab {
+	float: right;
+	background-color: #ffffff;
+	width: 50%;
+}
+/* Style the buttons inside the tab */
+.vertical_tabs div.tab button {
+	display: block;
+	background-color: inherit;
+	color: black;
+	padding: 22px 30px 22px 70px;
+	width: 100%;
+	border: none;
+	outline: none;
+	text-align: left;
+	cursor: pointer;
+	transition: 0.3s;
+	font-size: 17px;
+}
+/* Change background color of buttons on hover */
+.vertical_tabs div.tab button:hover {
+	background-color: #f8f6f5;
+}
+/* Create an active/current "tab button" class */
+.vertical_tabs div.tab button.active {
+	background-color: #fb8c34;
+	color:white;
+}
+.vertical_tabs div.tab button.active:before {
+	content: "\f0da";
+    font: 40px FontAwesome;
+    color: #fff;
+    margin-top: -3px;
+    margin-left: -40px;
+    padding-right: 30px;
+    position: absolute;
+}
+/* Style the tab content */
+.vertical_tabs .tabcontent {
+	float: left;
+	padding: 10px 50px;
+	border-left:1px solid #efefef;
+	width: 50%;
+	border-left: none;
+	height: 850px;
+}
+/*-------------------------------------------------*/
+/* ----------natures blue print Page---------- */
+/*-------------------------------------------------*/
+.naturesblueprint .headerLine {
+	background-image: url(http://static.gnld.com.s3.amazonaws.com/us/carotenoid/images/main_naturesblueprint.jpg);
+}
+
+/*-------------------------------------------------*/
+/* ----------SAB Page---------- */
+/*-------------------------------------------------*/
+
+
+.sab .headerLine {
+	background-image: url(http://static.gnld.com.s3.amazonaws.com/us/carotenoid/images/main_sab.jpg);
+}
+
+/*-------------------------------------------------*/
+/* ----------about Page---------- */
+/*-------------------------------------------------*/
+
+
+.aboutneolife .headerLine {
+	background-image: url(http://static.gnld.com.s3.amazonaws.com/us/carotenoid/images/main_aboutus.jpg);
+}
+
+/*-------------------------------------------------*/
+/* ----------expertopinions Page---------- */
+/*-------------------------------------------------*/
+
+
+.expertopinions .headerLine {
+	background-image: url(http://static.gnld.com.s3.amazonaws.com/us/carotenoid/images/main_expertopinions.jpg);
+	background-position: top;
+}
+.expertopinions_details .container-fluid{
+	display: table;
+	padding-right: 0px;
+padding-left: 0px;
+
+}
+.expertopinions_details .container-fluid .row{
+	display: table-row;
+}
+.magazine1{
+	background-image:linear-gradient( rgba(255,255,255,.7), rgba(255,255,255,.5) ), url(http://static.gnld.com.s3.amazonaws.com/us/carotenoid/images/magazine_182496998.jpg);
+	background-size:cover;
+	padding:100px 40px;
+	display: table-cell;
+	width:50%;
+	vertical-align:top;
+}
+.magazine1 h3{
+	margin-top:0;
+	line-height:1.7em;
+}
+.magazine2{
+	padding:100px 40px;
+	display: table-cell;
+	width:50%;
+	vertical-align:top;
+}
+/*-------------------------------------------------*/
+/* ----------popularpress Page---------- */
+/*-------------------------------------------------*/
+
+
+.popularpress .headerLine {
+	background-image: url(http://static.gnld.com.s3.amazonaws.com/us/carotenoid/images/main_popularpress.jpg);
+}
+.popularpress_sec2_title .container{
+	background-image: url(http://static.gnld.com.s3.amazonaws.com/us/carotenoid/images/popularPress.jpg);
+	background-size: cover;
+	background-position:50% 50%;
+}
+
+/*---------------------------------------
+ Mobiles Screens Starts
+-----------------------------------------*/
+
+/*---------------------------------------
+ Mobiles Screens Starts 1199px
+-----------------------------------------*/
+
+
+@media (max-width: 1199px) {
+header nav ul.nav >li {
+	margin-left: 20px;
+}
+nav .navbar-header .logo img {
+	height: 30px;
+}
+nav .logo {
+	padding: 16px 0px;
+}
+}
+
+/*---------------------------------------
+ Mobiles Screens Starts 991px
+-----------------------------------------*/
+
+@media (max-width: 991px) {
+header nav ul.nav >li, header.affix nav ul.nav > li {
+	width: 80px;
+	margin: 0px 0px 10px 18px;
+	line-height: 12px;
+	font-size: 12px
+}
+.navbar-nav > li > a {
+	line-height: 16px;
+}
+.nav-tabs > li {
+	width: 33.33%;
+}
+}
+
+/*---------------------------------------
+ Mobiles Screens Starts 767px
+-----------------------------------------*/
+
+@media (max-width: 767px) {
+.nav-wrapper {
+	min-height: 52px;
+}
+.navbar-header {
+	display: block;
+}
+nav .logo {
+	display: none;
+}
+nav .navbar-header .logo {
+	display: block;
+	position: absolute;
+	padding-top: 10px;
+}
+header {
+	width: 100%;
+	top: 0;
+	position: fixed;
+}
+header nav ul.nav {
+	width: 100%;
+	margin: 0 auto;
+	overflow: hidden;
+}
+header nav ul.nav >li {
+	display: block;
+	width: 100%;
+	margin-bottom: 0px;
+	margin-top: 6px;
+}
+header nav ul.nav >li>a {
+	padding-bottom: 6px;
+	padding-left: 25px;
+}
+header nav section.subNav > ul > li a {
+	display: block;
+	color: #888;
+	text-decoration: none;
+	padding: 6px 0 0px 0;
+}
+nav fieldset .select {
+	margin: 10px;
+}
+header nav section.subNav {
+	position: relative;
+	background: rgba(243,243,243, 0);
+	padding-bottom: 6px;
+}
+header nav section.subNav ul {
+	position: relative;
+	width: 100%;
+}
+header nav section.subNav ul li {
+	font-size: 12px;
+	padding-left: 10px;
+	margin-right: 10px;
+}
+header nav ul.nav >li >a:before {
+	display: none;
+}
+.sectionNav ul li {
+	width: 50%;
+}
+header.affix .select {
+	display: inline-block;
+}
+header.affix nav {
+	padding: 0px 10px 10px 10px;
+}
+header.affix nav .headerFunction {
+	width: 100%;
+}
+header.affix nav .logo img {
+	width: 170px;
+}
+header.affix nav .navbar-collapse.in {
+	width: 100%;
+	margin-left: 0px;
+	margin-top: 0px;
+	clear: both;
+}
+header.affix nav .navbar-collapse.in ul {
+	width: 100%;
+	clear: both;
+}
+header.affix nav .navbar-collapse.in ul.nav > li {
+	width: 100%;
+}
+header.affix nav .in ul.nav section {
+	margin-top: 0px;
+}
+}
+
+/*---------------------------------------
+ Mobiles Screens Starts 499px
+-----------------------------------------*/
+
+@media (max-width: 499px) {
+h1 {
+  margin-top: 0;
+  font-size: 2.441em;
+}
+
+h2 {font-size: 1.953em;}
+
+h3 {font-size: 1.563em;}
+
+h4 {font-size: 1.25em;}
+h5 {font-size: 1.1em;}
+.aboutneolife .headerLine {
+	background-image: linear-gradient( rgba(255,255,255,.5), rgba(255,255,255,.5) ) , url(http://static.gnld.com.s3.amazonaws.com/us/carotenoid/images/main_aboutus.jpg);
+}
+	.nav-tabs > li {
+	width: 100%;
+}
+	.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+    height:auto;
+}
+nav-tabs > li > a:hover, .nav-tabs > li > a {
+    height:auto;
+}
+}

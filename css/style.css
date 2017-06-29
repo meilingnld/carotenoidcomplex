@@ -356,14 +356,24 @@ footer h4{
 /*-------------------------------------------------*/
 /* ----------General---------- */
 /*-------------------------------------------------*/
-
+hr{
+	border:1px solid #efefef;
+}
 .white {
 	color: white !important;
 }
 .whitebox{
-	padding:50px;
+	padding:40px;
+	background:rgba(255,255,255,1);
+}
+.whitebox_t08{
+	padding:40px;
 	background:rgba(255,255,255,.8);
 }
+.gray-bg {
+    background: #f8f8f8;
+}
+
 .spacer{
 	height:80px;
 }
@@ -398,8 +408,8 @@ footer h4{
 	width: auto;
 }
 .wrapper section {
-	padding-top: 100px;
-	padding-bottom: 100px;
+	padding-top: 80px;
+	padding-bottom: 80px;
 }
 .wrapper section.nomargin
 {
@@ -408,6 +418,10 @@ footer h4{
 }
 .jumbotron {
     background-color: transparent;
+}
+.container-fluid {
+    padding-right: 0px;
+    padding-left: 0px;
 }
 .title .container{
 	padding-left: 5%;
@@ -422,9 +436,10 @@ footer h4{
 }
 
 .paragraphs .container {
-	padding-left: 15%;
-	padding-right: 15%;
+	margin:0 auto;
+	width:50%;
 }
+/* -----------tabs-----------*/
 .nav-tabs > li {
 	width: 16.66%;
 }
@@ -444,6 +459,15 @@ nav-tabs > li > a:hover, .nav-tabs > li > a {
 .regular_tabs{
 	box-shadow: 0px 0px 10px rgba(0,0,0,.1);
 }
+
+/* -----------div table-----------*/
+.div_table_row{
+	display:table-row;
+}
+.div_table_cell{
+	display:table-cell;
+}
+
 /* -----------accordion-----------*/
 .events h2 {
 	font-family: Helvetica, Arial, sans-serif;
@@ -617,11 +641,13 @@ nav-tabs > li > a:hover, .nav-tabs > li > a {
 
 
 .clinicallyproven .headerLine {
-	background-image: url(http://static.gnld.com.s3.amazonaws.com/us/carotenoid/images/main_home.jpg);
+	background-image: url(http://static.gnld.com.s3.amazonaws.com/us/carotenoid/images/main_clinicallyproven.jpg);
 }
 .clinicallyproven .clinically_details {
-	background-image: url(http://media.istockphoto.com/photos/beautiful-sunrise-in-san-quirico-dorcia-tuscany-italy-picture-id508070991?s=2048x2048);
-	height: 100vh;
+	background-image: url(http://static.gnld.com.s3.amazonaws.com/us/carotenoid/images/clinicallyproven_details_main.jpg);
+}
+.clinicallyproven_testimonial .whitebox{
+	opacity: 0;
 }
 /*-------------------------------------------------*/
 /* ----------the immune system Page---------- */
@@ -655,14 +681,23 @@ nav-tabs > li > a:hover, .nav-tabs > li > a {
 	background-image: url(http://static.gnld.com.s3.amazonaws.com/us/carotenoid/images/main_story.jpg);
 	background-position: center top;
 }
-
+.stories_details{
+	background-image: url(http://static.gnld.com.s3.amazonaws.com/us/carotenoid/images/story_details_main.jpg);
+	background-position: center top;
+	min-height: 100vh;
+	background-repeat: no-repeat;
+}
 .story_chart{
 	height: 850px;
 	background-color:#f8f6f5;
 	padding:10px 50px !important;
+	border-top:1px solid #efefef;
+	border-bottom:1px solid #efefef;
+	border-left:1px solid #efefef;
 }
-.story_chart h3, .vertical_tabs h3{
+.story_chart h4, .story_chart_list h4{
 	color:#fb8c34;
+	min-height:80px;
 }
 .story_chart ul .ti-check, .vertical_tabs ul .ti-check{
 	color:#70c342;
@@ -671,13 +706,22 @@ nav-tabs > li > a:hover, .nav-tabs > li > a {
 	color:#c34542;
 }
 .story_chart ul li h3, .vertical_tabs ul li h3, .vertical_tabs ul li p{
-	margin-top:0.5em;
+	margin-top:0.3em;
 }
 .story_chart ul, .vertical_tabs ul{
 	padding-left:10px;
 }
 .story_chart_list{
 	border:1px solid #efefef;
+}
+.stories_chart_sec .div_table_cell{
+	width:33.33%;
+}
+.stories_chart_sec .div_table_cell{
+	background:#efefef;
+}
+.stories_chart_sec .div_table_cell:nth-child(2){
+	background:#e3e3e3;
 }
 /* Style the vertical tab */
 .vertical_tabs div.tab {
@@ -733,6 +777,13 @@ nav-tabs > li > a:hover, .nav-tabs > li > a {
 	background-image: url(http://static.gnld.com.s3.amazonaws.com/us/carotenoid/images/main_naturesblueprint.jpg);
 }
 
+/*-------------------------------------------------*/
+/* ----------researchresources Page---------- */
+/*-------------------------------------------------*/
+.researchresources .headerLine {
+	background-image: url(http://static.gnld.com.s3.amazonaws.com/us/carotenoid/images/main_researchresources.jpg);
+}
+http://static.gnld.com.s3.amazonaws.com/us/carotenoid/images/main_researchresources.jpg
 /*-------------------------------------------------*/
 /* ----------SAB Page---------- */
 /*-------------------------------------------------*/
@@ -800,6 +851,23 @@ padding-left: 0px;
 	background-size: cover;
 	background-position:50% 50%;
 }
+
+/*-------------------------------------------------*/
+/* ----------faqs Page---------- */
+/*-------------------------------------------------*/
+
+
+.faqs .headerLine {
+	background-image: url(https://s3-us-west-1.amazonaws.com/static.neolife.com/market/us/assets/images/background_FAQ.jpg);
+	background-size: cover;
+}
+.faqs .whiteBG {
+    background: white;
+    padding: 40px;
+    margin: 10px;
+}
+
+
 
 /*---------------------------------------
  Mobiles Screens Starts
@@ -937,6 +1005,11 @@ header.affix nav .navbar-collapse.in ul.nav > li {
 header.affix nav .in ul.nav section {
 	margin-top: 0px;
 }
+	
+.stories_chart_sec .div_table_cell{
+	width:100%;
+	display: block;
+}
 }
 
 /*---------------------------------------
@@ -967,4 +1040,5 @@ h5 {font-size: 1.1em;}
 nav-tabs > li > a:hover, .nav-tabs > li > a {
     height:auto;
 }
+
 }

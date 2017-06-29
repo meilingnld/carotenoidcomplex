@@ -24,7 +24,8 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
-<body data-view="clinicallyproven/clinicallyproven/"><!-- #BeginLibraryItem "/Library/header.lbi" -->
+<body data-view="clinicallyproven/clinicallyproven/">
+<!-- #BeginLibraryItem "/Library/header.lbi" -->
 <div class="nav-wrapper">
   <header id="Top" class="affix-top">
     <nav class="navbar navbar-default" role="navigation">
@@ -100,87 +101,120 @@
     </nav>
   </header>
 </div>
-<!-- #EndLibraryItem --><div class="clinicallyproven wrapper">
+<!-- #EndLibraryItem -->
+<div class="clinicallyproven wrapper">
   <section class="headerLine parallax MainBannerImg" id="mainImg">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-5 col-md-offset-7">
-            <h1>Carotenoid Complex</h1>
-            <h3><br>
-              Boost Your Immune Power</h3>
-          </div>
-        </div>
-      </div>
-  </section>
-  <!-- end mainImg-->
-  <section>
     <div class="container">
       <div class="row">
-        <div class="col-md-4 col-md-offset-2"> <img src="http://static.gnld.com.s3.amazonaws.com/us/carotenoid/images/SC3b_a.jpg">
-          <p>&nbsp;</p>
-          <p>Poorly nourished people are an epidemic waiting to happen.</p>
-          <p><small>Arlo Karlen, Mand and Microbes</small></p>
-        </div>
-        <div class="col-md-4"> <img src="http://static.gnld.com.s3.amazonaws.com/us/carotenoid/images/SC3b_c.jpg">
-          <p>&nbsp;</p>
-          <p>Infectious diseases are the leading causes of death worldwide and the third leading cause of death in the united  States Antimicrobial resistance contributes to the burden of Solutions diseases domestically and globally.</p>
-          <p><small>Dr. James M. Hughes, Director.<br>
-            National Center for Infectious Diseases,<br>
-            Centers for Disease Control and Prevention</small></p>
+        <div class="col-md-6 col-md-offset-6">
+          <h3>Carotenoid Complex<h3>
+          <h1>Boost Your <strong>Immune Power</strong></h1>
         </div>
       </div>
     </div>
   </section>
-  <!-- end xxxxxxxxxx-->
-  <section class="clinically_details paragraphs">
+  <!-- end mainImg-->
+  <section class="clinicallyproven_testimonial gray-bg">
     <div class="container">
       <div class="row">
-        <div class="healthy_eating">
+		  <div class="col-md-2"></div>
+        <div class="col-md-4">
+          <div class="whitebox text-center James">
+            <div class="row">
+              <div class="col-md-6 col-md-offset-3"> <img class="img-circle" src="http://static.gnld.com.s3.amazonaws.com/us/carotenoid/images/SC3b_c.jpg"> </div>
+            </div>
+            <p>&nbsp;</p>
+            <hr>
+            <h4>“Infectious diseases are the leading causes of death worldwide and the third leading cause of death in the united  States Antimicrobial resistance contributes to the burden of Solutions diseases domestically and globally.”</h4>
+            <hr>
+            <p><small>Dr. James M. Hughes, Director.<br>
+              National Center for Infectious Diseases,<br>
+              Centers for Disease Control and Prevention</small></p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="whitebox text-center Arlo">
+            <div class="row">
+              <div class="col-md-6 col-md-offset-3"> <img class="img-circle" src="http://static.gnld.com.s3.amazonaws.com/us/carotenoid/images/SC3b_a.jpg"> </div>
+            </div>
+            <p>&nbsp;</p>
+            <hr>
+            <h4>“Poorly nourished people are an epidemic waiting to happen.”</h4>
+            <hr>
+            <p><small>Arlo Karlen, Man and Microbes</small></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  
+  <script>
+//  Scroll & Slide
+
+	$(window).scroll(function () {
+	$('.clinicallyproven_testimonial .whitebox').each(function () {
+        var imagePos = $(this).offset().top;
+        var imageHeight = $(this).height();
+        var topOfWindow = $(window).scrollTop();
+
+        if (imagePos < topOfWindow + imageHeight && imagePos + imageHeight > topOfWindow) {
+            $(this).addClass("animated fadeIn");
+        } else {
+            $(this).removeClass("animated fadeIn");
+        }
+    });	
+});
+
+</script>
+  <!-- end xxxxxxxxxx-->
+  <section class="clinically_details">
+    <div class="container">
+     <div class="row">
+     	<div class="col-md-8 col-md-offset-2">
+     	      <div class="whitebox_t08">
+        <div class="row">
           <div class="col-md-12">
             <p>Virtually all modern recommendations for healthy eating include increasing our intake of fruits and vegetables. In addition to helping control weight and providing healthful fiber, fruits and vegetables are valuable sources of a wide variety of phytonutrients. In plants, phytonutrients are largely used to fight off predators such as insects. When humans eat plants, the phytonutrients turn on enzymes that may allow us to detoxify many nasty chemicals, even carcinogens, and turn up the immune system, which allows us to fight infectious pathogens.</p>
           </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-md-6">
-          <div class="elderly_people">
-            <p>&nbsp;</p>
+        <div class="row">
+          <div class="col-md-6">
             <p>While it has long been known that elderly people are more susceptible to infectious diseases, only recently has the nutrition connection become clear. According to the World Health Organization, the impact of nutritional status on immune function in the elderly is striking. Many researchers are now exploring this link in all people. </p>
           </div>
-        </div>
-        <div class="col-md-6">
-          <div class="deep_green">
-            <p>&nbsp;</p>
+          <div class="col-md-6">
             <p>Increasingly, research has pointed to the carotenoids that are found in red, orange, yellow, and deep green fruits and vegetables. NeoLife's revolutionary Carotenoid Complex delivers a broad and balanced spectrum of these important carotenoids. Carotenoid Complex is the only whole-food carotenoid supplement with clinical proof from USDA researchers that it can boost your immune system! </p>
           </div>
         </div>
       </div>
+	    </div>
+	 </div>
+
     </div>
   </section>
-  <!-- end xxxxxxxxxx-->
-</div><!-- #BeginLibraryItem "/Library/footer.lbi" -->
-  <footer>
-  <div class="container">
-   <div class="row">
-    <div class="col-md-6">
-      <h4>About NeoLife</h4>
-      <small>We are a global health and wellness company committed to helping people take control of their health, not only physically but also financially. With over 50 years of experience, and currently operating in over 50 countries, we offer peace of mind that the success you build with our family is one you can pass down to future generations.</small>
-      <p>
-      <a href="http://www.shareneolife.com/" target="_blank"><img src="http://static.gnld.com.s3.amazonaws.com/us/neolifeblog/images/btn_visitSite.png" class="btn_link"></a> <a href="/faqs/" target="_self"><img src="http://static.gnld.com.s3.amazonaws.com/us/carotenoid/images/btn_carotenoid_faq.png" class="btn_link"></a>
-	  </p>
-    </div>
-    <div class="col-md-6">
-      <h4>Contact Us</h4>
-      <small>Email us for any general questions that you may have. </small>
-      <h4><i class="fa fa-phone" aria-hidden="true"></i> 800.432.5842</h4>
-      <h4><i class="fa fa-envelope-o" aria-hidden="true"></i> <a href="mailto:info@neolife.com">info@neolife.com</a></h4>
-      <div class="socialMedia">
-<a href="https://www.facebook.com/NeoLifeCLub" target="_blank"><img src="http://static.gnld.com.s3.amazonaws.com/content/emails/neolifeclubimg/icon_facebook_black.png" alt="" width="22" border="0" hspace="4"></a><a href="http://www.youtube.com/neolifeclub" target="_blank"><img src="http://static.gnld.com.s3.amazonaws.com/content/emails/neolifeclubimg/icon_youtube_black.png" alt="" width="22" border="0" hspace="4"></a><a href="http://www.twitter.com/neolifeclub" target="_blank"><img src="http://static.gnld.com.s3.amazonaws.com/content/emails/neolifeclubimg/icon_twitter_black.png" alt="" width="22" border="0" hspace="4"></a><a href="http://www.instagram.com/officialneolife" target="_blank"><img src="http://static.gnld.com.s3.amazonaws.com/content/emails/neolifeclubimg/icon_instagram_black.png" alt="" width="22" border="0" hspace="4"></a>
+  <!-- end xxxxxxxxxx--> 
 </div>
+<!-- #BeginLibraryItem "/Library/footer.lbi" -->
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h4>About NeoLife</h4>
+        <small>We are a global health and wellness company committed to helping people take control of their health, not only physically but also financially. With over 50 years of experience, and currently operating in over 50 countries, we offer peace of mind that the success you build with our family is one you can pass down to future generations.</small>
+        <p> <a href="http://www.shareneolife.com/" target="_blank"><img src="http://static.gnld.com.s3.amazonaws.com/us/neolifeblog/images/btn_visitSite.png" class="btn_link"></a> <a href="/faqs/" target="_self"><img src="http://static.gnld.com.s3.amazonaws.com/us/carotenoid/images/btn_carotenoid_faq.png" class="btn_link"></a> </p>
+      </div>
+      <div class="col-md-6">
+        <h4>Contact Us</h4>
+        <small>Email us for any general questions that you may have. </small>
+        <h4><i class="fa fa-phone" aria-hidden="true"></i> 800.432.5842</h4>
+        <h4><i class="fa fa-envelope-o" aria-hidden="true"></i> <a href="mailto:info@neolife.com">info@neolife.com</a></h4>
+        <div class="socialMedia"> <a href="https://www.facebook.com/NeoLifeCLub" target="_blank"><img src="http://static.gnld.com.s3.amazonaws.com/content/emails/neolifeclubimg/icon_facebook_black.png" alt="" width="22" border="0" hspace="4"></a><a href="http://www.youtube.com/neolifeclub" target="_blank"><img src="http://static.gnld.com.s3.amazonaws.com/content/emails/neolifeclubimg/icon_youtube_black.png" alt="" width="22" border="0" hspace="4"></a><a href="http://www.twitter.com/neolifeclub" target="_blank"><img src="http://static.gnld.com.s3.amazonaws.com/content/emails/neolifeclubimg/icon_twitter_black.png" alt="" width="22" border="0" hspace="4"></a><a href="http://www.instagram.com/officialneolife" target="_blank"><img src="http://static.gnld.com.s3.amazonaws.com/content/emails/neolifeclubimg/icon_instagram_black.png" alt="" width="22" border="0" hspace="4"></a> </div>
+      </div>
     </div>
   </div>
-  </div>
-  </footer>
+</footer>
 <div class="copyright text-center">© 2017 Neolife International</div>
-<div class="scroll-top-wrapper"> <span class="scroll-top-inner"> <i class="fa fa-2x fa-arrow-circle-up"></i></span></div><!-- #EndLibraryItem --></body>
+<div class="scroll-top-wrapper"> <span class="scroll-top-inner"> <i class="fa fa-2x fa-arrow-circle-up"></i></span></div>
+<!-- #EndLibraryItem -->
+</body>
 </html>

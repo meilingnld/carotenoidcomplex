@@ -71,11 +71,10 @@
                 </ul>
               </section>
             </li>
-            <li role="presentation" data-view-section="expertopinions" > <a href="/expertopinions/expertopinions/">Expert Opinions</a>
+            <li role="presentation" data-view-section="expertopinions" > <a href="/expertopinions/popularpress/">Expert Opinions</a>
               <section class="subNav clearfix">
                 <ul class="navbar-right">
-                  <li role="presentation" data-view-sub-section="expertopinions/expertopinions" > <a href="/expertopinions/expertopinions/">Expert Opinions</a></li>
-                  <li data-view-sub-section="expertopinions/popularpress"><a href="/expertopinions/popularpress/">Popular Press</a></li>
+                  <li data-view-sub-section="expertopinions/popularpress"><a href="/expertopinions/popularpress/">Popular Press </a></li>
                   <li data-view-sub-section="expertopinions/sab"><a href="/expertopinions/sab/">Scientific Advisory Board</a></li>
                 </ul>
               </section>
@@ -87,10 +86,10 @@
       var parts = $('body').data('view').split('/'),
           section  = parts[0],
           sub_section = parts.slice(0,2).join('\\/');
+	   
           //remember to change this when transfer to actural server//
 	      //section  = parts[0],
           //sub_section = parts.slice(0,2).join('\\/');
-	      
           $('li[data-view-section='+section+']').addClass('active');
           $('li[data-view-sub-section='+sub_section+']').addClass('active');
     });
@@ -102,57 +101,53 @@
 </div>
 <!-- #EndLibraryItem --><div class="firstlineofdefense wrapper">
   <section class="headerLine parallax MainBannerImg" id="mainImg">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-5 col-md-offset-7">
-            <h3>Your Body's First Line of Defense:</h3>
-            <h1><br>
-            Your Immune System</h1>
-          </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-md-offset-6">
+          <h1>Your Body's First Line of Defense: <strong>Your Immune System</strong></h1>
         </div>
       </div>
+    </div>
   </section>
   <!-- end mainImg-->
-
-  <section class="firstlineofdefense_details paragraphs">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <div class="secret_weapon">
-            <p>The secret weapon of your immune system is the ability to distinguish between the body's own cells ("self") and foreign cells ("non-self"). The key players in the immune system are lymphocytes: a variety of white blood cells which are formed in bone marrow and the thymus, congregate in the lymph nodes and other organs, and travel throughout the body in lymph fluid or the bloodstream.</p>
+  
+  <div class="firstlineofdefense_details">
+    <div class="container-fluid">
+      <div class="row div_table_row">
+        <div class="div_table_cell gray-bg">
+          <div class="box">
+            <h4><strong>The secret weapon of your immune system</strong> is the ability to distinguish between the body's own cells ("self") and foreign cells ("non-self"). The key players in the immune system are <strong>lymphocytes</strong>: a variety of white blood cells which are formed in bone marrow and the thymus, congregate in the lymph nodes and other organs, and travel throughout the body in lymph fluid or the bloodstream.</h4>
+            <h4><strong>Organs and tissues of the immune system</strong> dot the body and are connected by lymph and blood vessels to <strong>form a web of protection against infection</strong>.</h4>
+            <h4>Like soldier bees defending the hive, the detection of "non-self" cells stimulates a burst of lymphocyte activity, swarming to the infection site, reproducing targeted assassins rapidly, producing stockpiles of killer chemicals, and more.</h4>
           </div>
         </div>
-        <div class="col-md-6">
-          <div class="Organs_tissues">
-            <p>Organs and tissues of the immune system dot the body and are connected by lymph and blood vessels to form a web of protection against infection.</p>
-            <p>Like soldier bees defending the hive, the detection of "non-self" cells stimulates a burst of lymphocyte activity, swarming to the infection site, reproducing targeted assassins rapidly, producing stockpiles of killer chemicals, and more.</p>
-          </div>
-        </div>
+        <div class="div_table_cell img"> </div>
       </div>
     </div>
-  </section>
+  </div>
   <!-- end xxxxxxxxxx-->
   
-    <section>
+  <section class="firstlineofdefense_sec1">
     <div class="container">
-      <div class="row">
-		  <h2 class="text-center">The "warrior classes" of lymphocytes include:</h2>
-        <div class="col-md-4"> 
-			<img src="http://static.gnld.com.s3.amazonaws.com/us/carotenoid/images/SC3b_a.jpg">
-          <p>Natural killer cells - capable of attacking any foreign invader with lethal chemicals</p>
+      <div class="row text-center">
+        <h4>The <strong>"warrior classes" of lymphocytes</strong> include:</h4>
+        <p>&nbsp;</p>
+        <div class="col-md-4">
+          <h3><strong class="orange">Natural Killer Cells</strong></h3>
+          <p>capable of attacking any foreign invader with lethal chemicals</p>
         </div>
         <div class="col-md-4">
-          <img src="http://static.gnld.com.s3.amazonaws.com/us/carotenoid/images/SC3b_a.jpg">
-          <p>Killer T-cells - specialized cells that attack only specific matching targets</p>
+          <h3><strong class="orange">Killer T-cells</strong></h3>
+          <p>specialized cells that attack only specific matching targets</p>
         </div>
         <div class="col-md-4">
-          <img src="http://static.gnld.com.s3.amazonaws.com/us/carotenoid/images/SC3b_a.jpg">
-          <p>B-cells - secrete antibodies into body's fluids, which ambush foreign cells (antigens) in the bloodstream</p>
+          <h3><strong class="orange">B-cells</strong></h3>
+          <p>secrete antibodies into body's fluids, which ambush foreign cells (antigens) in the bloodstream</p>
         </div>
       </div>
     </div>
   </section>
-  <!-- end xxxxxxxxxx-->
+  <!-- end xxxxxxxxxx--> 
 </div><!-- #BeginLibraryItem "/Library/footer.lbi" -->
   <footer>
   <div class="container">
@@ -176,6 +171,7 @@
   </div>
   </div>
   </footer>
-<div class="copyright text-center">© 2017 Neolife International</div>
-<div class="scroll-top-wrapper"> <span class="scroll-top-inner"> <i class="fa fa-2x fa-arrow-circle-up"></i></span></div><!-- #EndLibraryItem --></body>
+<div class="copyright text-center">© <script> document.write((new Date()).getFullYear()) </script> NeoLife International</div>
+<div class="scroll-top-wrapper"> <span class="scroll-top-inner"> <i class="fa fa-2x fa-arrow-circle-up"></i></span></div>
+<!-- #EndLibraryItem --></body>
 </html>

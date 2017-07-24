@@ -198,6 +198,34 @@
   animation-name: swing;
 }
 
+
+@keyframes swing1 {
+  20% {
+    transform: rotate3d(0, 0, 1, 15deg);
+  }
+
+  40% {
+    transform: rotate3d(0, 0, 1, -10deg);
+  }
+
+  60% {
+    transform: rotate3d(0, 0, 1, 5deg);
+  }
+
+  80% {
+    transform: rotate3d(0, 0, 1, -5deg);
+  }
+
+  to {
+    transform: rotate3d(0, 0, 1, 0deg);
+  }
+}
+
+.swing1 {
+  transform-origin: bottom center;
+  animation-name: swing1;
+}
+
 @keyframes tada {
   from {
     transform: scale3d(1, 1, 1);

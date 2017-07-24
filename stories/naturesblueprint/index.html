@@ -71,11 +71,10 @@
                 </ul>
               </section>
             </li>
-            <li role="presentation" data-view-section="expertopinions" > <a href="/expertopinions/expertopinions/">Expert Opinions</a>
+            <li role="presentation" data-view-section="expertopinions" > <a href="/expertopinions/popularpress/">Expert Opinions</a>
               <section class="subNav clearfix">
                 <ul class="navbar-right">
-                  <li role="presentation" data-view-sub-section="expertopinions/expertopinions" > <a href="/expertopinions/expertopinions/">Expert Opinions</a></li>
-                  <li data-view-sub-section="expertopinions/popularpress"><a href="/expertopinions/popularpress/">Popular Press</a></li>
+                  <li data-view-sub-section="expertopinions/popularpress"><a href="/expertopinions/popularpress/">Popular Press </a></li>
                   <li data-view-sub-section="expertopinions/sab"><a href="/expertopinions/sab/">Scientific Advisory Board</a></li>
                 </ul>
               </section>
@@ -87,10 +86,10 @@
       var parts = $('body').data('view').split('/'),
           section  = parts[0],
           sub_section = parts.slice(0,2).join('\\/');
+	   
           //remember to change this when transfer to actural server//
 	      //section  = parts[0],
           //sub_section = parts.slice(0,2).join('\\/');
-	      
           $('li[data-view-section='+section+']').addClass('active');
           $('li[data-view-sub-section='+sub_section+']').addClass('active');
     });
@@ -104,29 +103,28 @@
   <section class="headerLine parallax MainBannerImg" id="mainImg">
       <div class="container">
         <div class="row">
-          <div class="col-md-6">
-            <h1>Following Nature's <strong>Blueprint</strong></h1>
+          <div class="col-md-6 col-md-offset-6">
+            <h1>Following <strong>Nature's Blueprint</strong></h1>
+			  <h3>At NeoLife, we have always <strong>looked toward nature as the preeminent guide</strong> for all of our supplements.</h3>
           </div>
         </div>
       </div>
   </section>
   <!-- end mainImg-->
 
-  <section class="naturesblueprint_details paragraphs">
+  <section class="naturesblueprint_details">
     <div class="container">
       <div class="row">
-        <div class="col-md-12">
-			<img src="http://static.gnld.com.s3.amazonaws.com/us/carotenoid/images/naturesblueprint_chart.jpg">
-          <div>
-            <p>At NeoLife, we have always looked toward nature as the preeminent guide for all of our supplements.</p>
-            <p>Carotenoid Complex was developed based on this philosophy using Nature's blueprint as our guide. The all natural, whole-food components of Carotenoid Complex are chosen not only for their rich carotenoid content, but also because they are found in the human food chain.              </p>
+		<div class="col-md-6">
+            
+            <p>Carotenoid Complex was developed based on this philosophy using Nature's blueprint as our guide. The <strong>all natural, whole-food components</strong> of Carotenoid Complex are chosen not only for their rich carotenoid content, but also because they are found in the <strong>human food chain</strong>. </p>
             <p>What you will not find in Carotenoid Complex is synthetic beta-carotene or carotenoids derived from non-food sources. Most other carotenoid supplements use ingredients derived from flowers, synthetic sources, and even algae. None of these are in the human food chain.</p>
-            <p> Carotenoid Complex is a "balanced" supplement because all of its carotenoids are in balanced ratios with one another, just as you find in nature. Plus, our unique blend provides the wide spectrum of carotenoids found in foods. Carotenoid Complex contains Alpha-Carotene, Beta-Carotene, cis-Beta-Carotene, Gamma-Carotene, Zeta-Carotene, Lycopene, cis-Lycopene, Lutein, Zeaxanthin, Alpha-Cryptoxanthin, Beta-Cryptoxanthin, Violaxanthin, Canthaxanthin, Capsanthin and Cryptocapsin. In contrast, our competitors only provide a few carotenoids in unbalanced ratios.              </p>
-            <p>NeoLife's Carotenoid Complex is your only choice for a 100% natural, carotenoid supplement.</p>
-          </div>
+            <p> Carotenoid Complex is a <strong>"balanced" supplement</strong> because all of its carotenoids are in balanced ratios with one another, just as you find in nature. Plus, our unique blend provides the wide spectrum of carotenoids found in foods. Carotenoid Complex contains <strong>Alpha-Carotene, Beta-Carotene, cis-Beta-Carotene, Gamma-Carotene, Zeta-Carotene, Lycopene, cis-Lycopene, Lutein, Zeaxanthin, Alpha-Cryptoxanthin, Beta-Cryptoxanthin, Violaxanthin, Canthaxanthin, Capsanthin </strong>and <strong>Cryptocapsin</strong>. In contrast, our competitors only provide a few carotenoids in unbalanced ratios. </p>
+            <p>NeoLife's Carotenoid Complex is your only choice for a<strong> 100% natural, carotenoid supplement</strong>.</p>
         </div>
-
-
+        <div class="col-md-6">
+			<img src="http://static.gnld.com.s3.amazonaws.com/us/carotenoid/images/naturesblueprint_chart.jpg">
+        </div>
       </div>
     </div>
   </section>
@@ -154,6 +152,7 @@
   </div>
   </div>
   </footer>
-<div class="copyright text-center">© 2017 Neolife International</div>
-<div class="scroll-top-wrapper"> <span class="scroll-top-inner"> <i class="fa fa-2x fa-arrow-circle-up"></i></span></div><!-- #EndLibraryItem --></body>
+<div class="copyright text-center">© <script> document.write((new Date()).getFullYear()) </script> NeoLife International</div>
+<div class="scroll-top-wrapper"> <span class="scroll-top-inner"> <i class="fa fa-2x fa-arrow-circle-up"></i></span></div>
+<!-- #EndLibraryItem --></body>
 </html>

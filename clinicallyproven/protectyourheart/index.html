@@ -71,11 +71,10 @@
                 </ul>
               </section>
             </li>
-            <li role="presentation" data-view-section="expertopinions" > <a href="/expertopinions/expertopinions/">Expert Opinions</a>
+            <li role="presentation" data-view-section="expertopinions" > <a href="/expertopinions/popularpress/">Expert Opinions</a>
               <section class="subNav clearfix">
                 <ul class="navbar-right">
-                  <li role="presentation" data-view-sub-section="expertopinions/expertopinions" > <a href="/expertopinions/expertopinions/">Expert Opinions</a></li>
-                  <li data-view-sub-section="expertopinions/popularpress"><a href="/expertopinions/popularpress/">Popular Press</a></li>
+                  <li data-view-sub-section="expertopinions/popularpress"><a href="/expertopinions/popularpress/">Popular Press </a></li>
                   <li data-view-sub-section="expertopinions/sab"><a href="/expertopinions/sab/">Scientific Advisory Board</a></li>
                 </ul>
               </section>
@@ -87,10 +86,10 @@
       var parts = $('body').data('view').split('/'),
           section  = parts[0],
           sub_section = parts.slice(0,2).join('\\/');
+	   
           //remember to change this when transfer to actural server//
 	      //section  = parts[0],
           //sub_section = parts.slice(0,2).join('\\/');
-	      
           $('li[data-view-section='+section+']').addClass('active');
           $('li[data-view-sub-section='+sub_section+']').addClass('active');
     });
@@ -102,45 +101,33 @@
 </div>
 <!-- #EndLibraryItem --><div class="protectyourheart wrapper">
   <section class="headerLine parallax MainBannerImg" id="mainImg">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-5 col-md-offset-7">
-            <h3>Carotenoid Complex</h3>
-            <h1>
-            Protects Your Heart</h1>
-          </div>
-        </div>
-      </div>
-  </section>
-  <!-- end mainImg-->
-
-  <section class="protectyourheart_details paragraphs">
     <div class="container">
       <div class="row">
-        <div class="col-md-12">
-          <div>
-            <p>Research into the cause, prevention and treatment of heart disease has made tremendous progress in the last few years. One of the most promising areas of research has been with antioxidants and their roles in the prevention of atherosclerotic plaque. Arterial pathways are narrowed and damaged by these plaques, which can eventually lead to heart disease. Oxidation of LDL cholesterol is a major contributor to these plaque formations. The exciting news is that powerful antioxidants, such as Carotenoid Complex, can minimize this destructive process.</p>
-          </div>
-        </div>
         <div class="col-md-6">
-          <div>
-            
-            <p>&nbsp;</p>
-            <p>GNLD's revolutionary Carotenoid Complex has been proven to reduce the formation of oxidatively modified LDL cholesterol in human clinical trials. The trials were conducted by United States Department of Agriculture researchers and published in the journal, Free Radicals in Biology and Medicine.</p>
-          </div>
+          <h1>Carotenoid Complex <strong>Protects Your Heart</strong></h1>
         </div>
-        <div class="col-md-6">
-          <div>
-            <p>&nbsp;</p>
-            <p>When used as part of an overall heart health plan, Carotenoid Complex offers proven protection to help you achieve and maintain optimal health and well-being.</p>
-            <p>(reference: Daily Carotenoid Complex No. 3)</p>
-          </div>
-        </div>
-
       </div>
     </div>
   </section>
-  <!-- end defendyourcells_details-->
+  <!-- end mainImg-->
+  
+  <section class="protectyourheart_details">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <p>Research into the cause, prevention and treatment of heart disease has made tremendous progress in the last few years. One of the most promising areas of research has been with antioxidants and their roles in the prevention of atherosclerotic plaque. Arterial pathways are narrowed and damaged by these plaques, which can eventually lead to heart disease. Oxidation of LDL cholesterol is a major contributor to these plaque formations. The exciting news is that powerful antioxidants, such as <strong>Carotenoid Complex, can minimize this destructive process.</strong></p>
+        </div>
+        <div class="col-md-4">
+          <p><strong>NeoLife's revolutionary Carotenoid Complex has been proven to reduce the formation of oxidatively modified LDL cholesterol in human clinical trials.</strong> The trials were conducted by United States Department of Agriculture researchers and published in the journal, Free Radicals in Biology and Medicine.</p>
+        </div>
+        <div class="col-md-4">
+          <p>When used as part of an overall heart health plan, Carotenoid Complex offers proven protection to help you achieve and maintain optimal health and well-being.</p>
+			<p><small>(<a href="/researchresources/references/#d3" target="_self">reference: Daily Carotenoid Complex No. 3</a>)</small></p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end defendyourcells_details--> 
 </div><!-- #BeginLibraryItem "/Library/footer.lbi" -->
   <footer>
   <div class="container">
@@ -164,6 +151,7 @@
   </div>
   </div>
   </footer>
-<div class="copyright text-center">© 2017 Neolife International</div>
-<div class="scroll-top-wrapper"> <span class="scroll-top-inner"> <i class="fa fa-2x fa-arrow-circle-up"></i></span></div><!-- #EndLibraryItem --></body>
+<div class="copyright text-center">© <script> document.write((new Date()).getFullYear()) </script> NeoLife International</div>
+<div class="scroll-top-wrapper"> <span class="scroll-top-inner"> <i class="fa fa-2x fa-arrow-circle-up"></i></span></div>
+<!-- #EndLibraryItem --></body>
 </html>

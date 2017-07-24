@@ -71,11 +71,10 @@
                 </ul>
               </section>
             </li>
-            <li role="presentation" data-view-section="expertopinions" > <a href="/expertopinions/expertopinions/">Expert Opinions</a>
+            <li role="presentation" data-view-section="expertopinions" > <a href="/expertopinions/popularpress/">Expert Opinions</a>
               <section class="subNav clearfix">
                 <ul class="navbar-right">
-                  <li role="presentation" data-view-sub-section="expertopinions/expertopinions" > <a href="/expertopinions/expertopinions/">Expert Opinions</a></li>
-                  <li data-view-sub-section="expertopinions/popularpress"><a href="/expertopinions/popularpress/">Popular Press</a></li>
+                  <li data-view-sub-section="expertopinions/popularpress"><a href="/expertopinions/popularpress/">Popular Press </a></li>
                   <li data-view-sub-section="expertopinions/sab"><a href="/expertopinions/sab/">Scientific Advisory Board</a></li>
                 </ul>
               </section>
@@ -87,10 +86,10 @@
       var parts = $('body').data('view').split('/'),
           section  = parts[0],
           sub_section = parts.slice(0,2).join('\\/');
+	   
           //remember to change this when transfer to actural server//
 	      //section  = parts[0],
           //sub_section = parts.slice(0,2).join('\\/');
-	      
           $('li[data-view-section='+section+']').addClass('active');
           $('li[data-view-sub-section='+sub_section+']').addClass('active');
     });
@@ -104,9 +103,13 @@
   <section class="headerLine parallax MainBannerImg" id="mainImg">
     <div class="container">
       <div class="row">
-        <div class="col-md-6 col-md-offset-6">
-          <h3>What the Expert Are Saying About New</h3>
-          <h1>Carotenoid Complex</h1>
+        <div class="col-sm-6 col-md-5">
+          <h1>What the Expert Are Saying About New <strong>Carotenoid Complex</strong></h1>
+        </div>
+        <div class="col-sm-6 col-md-7">
+          <div class="col-md-8 text-center">
+          <img src="http://static.gnld.com.s3.amazonaws.com/us/carotenoid/images/home_main_bottle.png">
+			</div>
         </div>
       </div>
     </div>
@@ -150,7 +153,7 @@
               <p class="text-muted"> Ph.D., Food Scientist, <br>
               Nutritionist </p>
               <button type="button" class="btn btn-warning btn-sm">Click Here</button>
-              <div class='hidden' data-content='bio'> "Plant pigments in fruits and vegetables act as antioxidants to provide protection against diseases of aging. Eating five to nine servings of fruits and vegetables daily is required for protection. But a recent survey showed that 90% of Americans do not meet this requirement, and only about 3% eat the recommended dietary allowances for all vitamins, minerals, and other nutrients. Supplementation is the most convenient and effective way to compensate for an inadequate diet. GNLD's Carotenoid Complex utilizes advanced technologies that make it feasible to separate, extract, concentrate and preserve phytonutrients in biologically active forms. Carotenoid Complex offers a prudent step toward prevention of many diseases."<br>
+              <div class='hidden' data-content='bio'> "Plant pigments in fruits and vegetables act as antioxidants to provide protection against diseases of aging. Eating five to nine servings of fruits and vegetables daily is required for protection. But a recent survey showed that 90% of Americans do not meet this requirement, and only about 3% eat the recommended dietary allowances for all vitamins, minerals, and other nutrients. Supplementation is the most convenient and effective way to compensate for an inadequate diet. NeoLife's Carotenoid Complex utilizes advanced technologies that make it feasible to separate, extract, concentrate and preserve phytonutrients in biologically active forms. Carotenoid Complex offers a prudent step toward prevention of many diseases."<br>
                 <br>
                 <b> Laszlo P. Somogyi, Ph.D. <br>
                 Food Scientist, Nutritionist <br>
@@ -187,6 +190,9 @@
               </a> </div>
           </div>
           <!--Arianna Carughi--> 
+          <div class="col-sm-3 col-md-3">
+          <img style="padding:10px 30px;" src="http://static.gnld.com.s3.amazonaws.com/us/neolifedetox/images/sab_logo-1.png">
+		  </div>
         </div>
         <div class="modal fade" id="BioModal" tabindex="-1" role="dialog" aria-labelledby="BioModalLabel">
           <div class="modal-dialog" role="document">
@@ -237,6 +243,7 @@
   </div>
   </div>
   </footer>
-<div class="copyright text-center">© 2017 Neolife International</div>
-<div class="scroll-top-wrapper"> <span class="scroll-top-inner"> <i class="fa fa-2x fa-arrow-circle-up"></i></span></div><!-- #EndLibraryItem --></body>
+<div class="copyright text-center">© <script> document.write((new Date()).getFullYear()) </script> NeoLife International</div>
+<div class="scroll-top-wrapper"> <span class="scroll-top-inner"> <i class="fa fa-2x fa-arrow-circle-up"></i></span></div>
+<!-- #EndLibraryItem --></body>
 </html>

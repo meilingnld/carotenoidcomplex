@@ -24,8 +24,7 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
-<body data-view="clinicallyproven/clinicallyproven/">
-<!-- #BeginLibraryItem "/Library/header.lbi" -->
+<body data-view="clinicallyproven/clinicallyproven/"><!-- #BeginLibraryItem "/Library/header.lbi" -->
 <div class="nav-wrapper">
   <header id="Top" class="affix-top">
     <nav class="navbar navbar-default" role="navigation">
@@ -72,11 +71,10 @@
                 </ul>
               </section>
             </li>
-            <li role="presentation" data-view-section="expertopinions" > <a href="/expertopinions/expertopinions/">Expert Opinions</a>
+            <li role="presentation" data-view-section="expertopinions" > <a href="/expertopinions/popularpress/">Expert Opinions</a>
               <section class="subNav clearfix">
                 <ul class="navbar-right">
-                  <li role="presentation" data-view-sub-section="expertopinions/expertopinions" > <a href="/expertopinions/expertopinions/">Expert Opinions</a></li>
-                  <li data-view-sub-section="expertopinions/popularpress"><a href="/expertopinions/popularpress/">Popular Press</a></li>
+                  <li data-view-sub-section="expertopinions/popularpress"><a href="/expertopinions/popularpress/">Popular Press </a></li>
                   <li data-view-sub-section="expertopinions/sab"><a href="/expertopinions/sab/">Scientific Advisory Board</a></li>
                 </ul>
               </section>
@@ -88,10 +86,10 @@
       var parts = $('body').data('view').split('/'),
           section  = parts[0],
           sub_section = parts.slice(0,2).join('\\/');
+	   
           //remember to change this when transfer to actural server//
 	      //section  = parts[0],
           //sub_section = parts.slice(0,2).join('\\/');
-	      
           $('li[data-view-section='+section+']').addClass('active');
           $('li[data-view-sub-section='+sub_section+']').addClass('active');
     });
@@ -101,38 +99,37 @@
     </nav>
   </header>
 </div>
-<!-- #EndLibraryItem -->
-<div class="clinicallyproven wrapper">
+<!-- #EndLibraryItem --><div class="clinicallyproven wrapper">
   <section class="headerLine parallax MainBannerImg" id="mainImg">
     <div class="container">
       <div class="row">
         <div class="col-md-6 col-md-offset-6">
-          <h3>Carotenoid Complex<h3>
-          <h1>Boost Your <strong>Immune Power</strong></h1>
+          <h1>Carotenoid Complex Boost Your <strong>Immune Power</strong></h1>
         </div>
       </div>
     </div>
   </section>
   <!-- end mainImg-->
-  <section class="clinicallyproven_testimonial gray-bg">
+  <section class="clinicallyproven_testimonial">
+	  <div class="spacer"></div>
     <div class="container">
       <div class="row">
-		  <div class="col-md-2"></div>
-        <div class="col-md-4">
+		  
+        <div class="col-md-6">
           <div class="whitebox text-center James">
             <div class="row">
               <div class="col-md-6 col-md-offset-3"> <img class="img-circle" src="http://static.gnld.com.s3.amazonaws.com/us/carotenoid/images/SC3b_c.jpg"> </div>
             </div>
             <p>&nbsp;</p>
             <hr>
-            <h4>“Infectious diseases are the leading causes of death worldwide and the third leading cause of death in the united  States Antimicrobial resistance contributes to the burden of Solutions diseases domestically and globally.”</h4>
+            <h4>“Infectious diseases are the leading causes of death worldwide and the third leading cause of death in the United  States Antimicrobial resistance contributes to the burden of infectious diseases domestically and globally.”</h4>
             <hr>
-            <p><small>Dr. James M. Hughes, Director.<br>
-              National Center for Infectious Diseases,<br>
-              Centers for Disease Control and Prevention</small></p>
+			  <h4 class="orange">Dr. James M. Hughes</h4>
+             <p><small>Director,
+              National Center for Infectious Diseases, Centers for Disease Control and Prevention</small></p>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-6">
           <div class="whitebox text-center Arlo">
             <div class="row">
               <div class="col-md-6 col-md-offset-3"> <img class="img-circle" src="http://static.gnld.com.s3.amazonaws.com/us/carotenoid/images/SC3b_a.jpg"> </div>
@@ -141,7 +138,8 @@
             <hr>
             <h4>“Poorly nourished people are an epidemic waiting to happen.”</h4>
             <hr>
-            <p><small>Arlo Karlen, Man and Microbes</small></p>
+            <h4 class="orange">Arlo Karlen</h4>
+            <p><small>Man and Microbes</small></p>
           </div>
         </div>
       </div>
@@ -167,23 +165,21 @@
 });
 
 </script>
-  <!-- end xxxxxxxxxx-->
+  <!-- end clinicallyproven_testimonial-->
   <section class="clinically_details">
     <div class="container">
      <div class="row">
-     	<div class="col-md-8 col-md-offset-2">
+     	<div class="col-md-12">
      	      <div class="whitebox_t08">
         <div class="row">
-          <div class="col-md-12">
-            <p>Virtually all modern recommendations for healthy eating include increasing our intake of fruits and vegetables. In addition to helping control weight and providing healthful fiber, fruits and vegetables are valuable sources of a wide variety of phytonutrients. In plants, phytonutrients are largely used to fight off predators such as insects. When humans eat plants, the phytonutrients turn on enzymes that may allow us to detoxify many nasty chemicals, even carcinogens, and turn up the immune system, which allows us to fight infectious pathogens.</p>
+          <div class="col-md-4">
+            <p>Virtually all modern recommendations for healthy eating include increasing our intake of fruits and vegetables. In addition to helping control weight and providing healthful fiber, fruits and vegetables are valuable sources of a wide variety of phytonutrients. In plants, phytonutrients are largely used to fight off predators such as insects. When humans eat plants, <strong>the phytonutrients turn on enzymes</strong> that may allow us to <strong>detoxify many nasty chemicals</strong>, even <strong>carcinogens</strong>, and <strong>turn up the immune system</strong>, which allows us to fight infectious pathogens.</p>
           </div>
-        </div>
-        <div class="row">
-          <div class="col-md-6">
-            <p>While it has long been known that elderly people are more susceptible to infectious diseases, only recently has the nutrition connection become clear. According to the World Health Organization, the impact of nutritional status on immune function in the elderly is striking. Many researchers are now exploring this link in all people. </p>
+          <div class="col-md-4">
+            <p>While it has long been known that elderly people are more susceptible to infectious diseases, only recently has the nutrition connection become clear. According to the World Health Organization, <strong>the impact of nutritional status on immune function in the elderly is striking</strong>. Many researchers are now exploring this link in all people. </p>
           </div>
-          <div class="col-md-6">
-            <p>Increasingly, research has pointed to the carotenoids that are found in red, orange, yellow, and deep green fruits and vegetables. NeoLife's revolutionary Carotenoid Complex delivers a broad and balanced spectrum of these important carotenoids. Carotenoid Complex is the only whole-food carotenoid supplement with clinical proof from USDA researchers that it can boost your immune system! </p>
+          <div class="col-md-4">
+            <p>Increasingly, research has pointed to the carotenoids that are found in red, orange, yellow, and deep green fruits and vegetables. NeoLife's revolutionary Carotenoid Complex delivers a broad and balanced spectrum of these important carotenoids. <strong>Carotenoid Complex is the only whole-food carotenoid supplement with clinical proof from USDA researchers that it can boost your immune system! </strong></p>
           </div>
         </div>
       </div>
@@ -192,29 +188,31 @@
 
     </div>
   </section>
-  <!-- end xxxxxxxxxx--> 
-</div>
-<!-- #BeginLibraryItem "/Library/footer.lbi" -->
-<footer>
+  <!-- end clinically_details--> 
+</div><!-- #BeginLibraryItem "/Library/footer.lbi" -->
+  <footer>
   <div class="container">
-    <div class="row">
-      <div class="col-md-6">
-        <h4>About NeoLife</h4>
-        <small>We are a global health and wellness company committed to helping people take control of their health, not only physically but also financially. With over 50 years of experience, and currently operating in over 50 countries, we offer peace of mind that the success you build with our family is one you can pass down to future generations.</small>
-        <p> <a href="http://www.shareneolife.com/" target="_blank"><img src="http://static.gnld.com.s3.amazonaws.com/us/neolifeblog/images/btn_visitSite.png" class="btn_link"></a> <a href="/faqs/" target="_self"><img src="http://static.gnld.com.s3.amazonaws.com/us/carotenoid/images/btn_carotenoid_faq.png" class="btn_link"></a> </p>
-      </div>
-      <div class="col-md-6">
-        <h4>Contact Us</h4>
-        <small>Email us for any general questions that you may have. </small>
-        <h4><i class="fa fa-phone" aria-hidden="true"></i> 800.432.5842</h4>
-        <h4><i class="fa fa-envelope-o" aria-hidden="true"></i> <a href="mailto:info@neolife.com">info@neolife.com</a></h4>
-        <div class="socialMedia"> <a href="https://www.facebook.com/NeoLifeCLub" target="_blank"><img src="http://static.gnld.com.s3.amazonaws.com/content/emails/neolifeclubimg/icon_facebook_black.png" alt="" width="22" border="0" hspace="4"></a><a href="http://www.youtube.com/neolifeclub" target="_blank"><img src="http://static.gnld.com.s3.amazonaws.com/content/emails/neolifeclubimg/icon_youtube_black.png" alt="" width="22" border="0" hspace="4"></a><a href="http://www.twitter.com/neolifeclub" target="_blank"><img src="http://static.gnld.com.s3.amazonaws.com/content/emails/neolifeclubimg/icon_twitter_black.png" alt="" width="22" border="0" hspace="4"></a><a href="http://www.instagram.com/officialneolife" target="_blank"><img src="http://static.gnld.com.s3.amazonaws.com/content/emails/neolifeclubimg/icon_instagram_black.png" alt="" width="22" border="0" hspace="4"></a> </div>
-      </div>
+   <div class="row">
+    <div class="col-md-6">
+      <h4>About NeoLife</h4>
+      <small>We are a global health and wellness company committed to helping people take control of their health, not only physically but also financially. With over 50 years of experience, and currently operating in over 50 countries, we offer peace of mind that the success you build with our family is one you can pass down to future generations.</small>
+      <p>
+      <a href="http://www.shareneolife.com/" target="_blank"><img src="http://static.gnld.com.s3.amazonaws.com/us/neolifeblog/images/btn_visitSite.png" class="btn_link"></a> <a href="/faqs/" target="_self"><img src="http://static.gnld.com.s3.amazonaws.com/us/carotenoid/images/btn_carotenoid_faq.png" class="btn_link"></a>
+	  </p>
+    </div>
+    <div class="col-md-6">
+      <h4>Contact Us</h4>
+      <small>Email us for any general questions that you may have. </small>
+      <h4><i class="fa fa-phone" aria-hidden="true"></i> 800.432.5842</h4>
+      <h4><i class="fa fa-envelope-o" aria-hidden="true"></i> <a href="mailto:info@neolife.com">info@neolife.com</a></h4>
+      <div class="socialMedia">
+<a href="https://www.facebook.com/NeoLifeCLub" target="_blank"><img src="http://static.gnld.com.s3.amazonaws.com/content/emails/neolifeclubimg/icon_facebook_black.png" alt="" width="22" border="0" hspace="4"></a><a href="http://www.youtube.com/neolifeclub" target="_blank"><img src="http://static.gnld.com.s3.amazonaws.com/content/emails/neolifeclubimg/icon_youtube_black.png" alt="" width="22" border="0" hspace="4"></a><a href="http://www.twitter.com/neolifeclub" target="_blank"><img src="http://static.gnld.com.s3.amazonaws.com/content/emails/neolifeclubimg/icon_twitter_black.png" alt="" width="22" border="0" hspace="4"></a><a href="http://www.instagram.com/officialneolife" target="_blank"><img src="http://static.gnld.com.s3.amazonaws.com/content/emails/neolifeclubimg/icon_instagram_black.png" alt="" width="22" border="0" hspace="4"></a>
+</div>
     </div>
   </div>
-</footer>
-<div class="copyright text-center">© 2017 Neolife International</div>
+  </div>
+  </footer>
+<div class="copyright text-center">© <script> document.write((new Date()).getFullYear()) </script> NeoLife International</div>
 <div class="scroll-top-wrapper"> <span class="scroll-top-inner"> <i class="fa fa-2x fa-arrow-circle-up"></i></span></div>
-<!-- #EndLibraryItem -->
-</body>
+<!-- #EndLibraryItem --></body>
 </html>

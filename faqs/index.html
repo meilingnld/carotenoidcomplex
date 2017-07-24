@@ -71,11 +71,10 @@
                 </ul>
               </section>
             </li>
-            <li role="presentation" data-view-section="expertopinions" > <a href="/expertopinions/expertopinions/">Expert Opinions</a>
+            <li role="presentation" data-view-section="expertopinions" > <a href="/expertopinions/popularpress/">Expert Opinions</a>
               <section class="subNav clearfix">
                 <ul class="navbar-right">
-                  <li role="presentation" data-view-sub-section="expertopinions/expertopinions" > <a href="/expertopinions/expertopinions/">Expert Opinions</a></li>
-                  <li data-view-sub-section="expertopinions/popularpress"><a href="/expertopinions/popularpress/">Popular Press</a></li>
+                  <li data-view-sub-section="expertopinions/popularpress"><a href="/expertopinions/popularpress/">Popular Press </a></li>
                   <li data-view-sub-section="expertopinions/sab"><a href="/expertopinions/sab/">Scientific Advisory Board</a></li>
                 </ul>
               </section>
@@ -87,10 +86,10 @@
       var parts = $('body').data('view').split('/'),
           section  = parts[0],
           sub_section = parts.slice(0,2).join('\\/');
+	   
           //remember to change this when transfer to actural server//
 	      //section  = parts[0],
           //sub_section = parts.slice(0,2).join('\\/');
-	      
           $('li[data-view-section='+section+']').addClass('active');
           $('li[data-view-sub-section='+sub_section+']').addClass('active');
     });
@@ -105,7 +104,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-12">
-            <h1 class="text-center">FAQs</h1>
+            <h1>FAQs</h1>
             
             
             
@@ -132,7 +131,7 @@ Plus, even those that do eat the recommended amounts of fruits and vegetables ev
               <h2 class="ti-minus collapsed btnAccor" role="button" data-toggle="collapse" data-parent="#accordion1" href="#collapseA2" aria-expanded="true" aria-controls="collapseA2">Can I get enough carotenoids from my diet alone? </h2>
               <div id="collapseA2" class="collapse" role="tabpanel" aria-labelledby="heading2">
                 <div class="eventItem clearfix">
-                  <p>If you want the best antioxidant protection for your body, <a href="/stories/wholefoodadvantage/" target="_self">it would be extremely difficult to eat enough fruits and vegetables</a>. GNLD stresses that it is vital that you follow a diet that is rich in fruits and vegetables, but we also know that most of the fruits and vegetables that we do eat, like bananas and potatoes, are not good sources of carotenoids. In addition, the bioavailability of carotenoids in uncooked fruits and vegetables is extremely poor. Raw carrots are only about 5-10% bioavailable in their carotenoid content. In comparison, the carotenoids in Carotenoid Complex are up to 95% bioavailable.</p>
+                  <p>If you want the best antioxidant protection for your body, <a href="/stories/wholefoodadvantage/" target="_self">it would be extremely difficult to eat enough fruits and vegetables</a>. NeoLife stresses that it is vital that you follow a diet that is rich in fruits and vegetables, but we also know that most of the fruits and vegetables that we do eat, like bananas and potatoes, are not good sources of carotenoids. In addition, the bioavailability of carotenoids in uncooked fruits and vegetables is extremely poor. Raw carrots are only about 5-10% bioavailable in their carotenoid content. In comparison, the carotenoids in Carotenoid Complex are up to 95% bioavailable.</p>
                 </div>
               </div>
               <!-- /.article-->
@@ -175,7 +174,7 @@ Plus, even those that do eat the recommended amounts of fruits and vegetables ev
               <h2 class="ti-minus collapsed btnAccor" role="button" data-toggle="collapse" data-parent="#accordion1" href="#collapseA6" aria-expanded="true" aria-controls="collapseA6">Do I need to stop taking other antioxidant supplements if I use Carotenoid Complex? </h2>
               <div id="collapseA6" class="collapse" role="tabpanel" aria-labelledby="heading2">
                 <div class="eventItem clearfix">
-                  <p>Carotenoid Complex provides powerful antioxidant protection, but the need to supplement with other antioxidants remains. You should continue supplementing with GNLD's Flavonoid Complex, vitamin E and vitamin C.</p>
+                  <p>Carotenoid Complex provides powerful antioxidant protection, but the need to supplement with other antioxidants remains. You should continue supplementing with NeoLife's Flavonoid Complex, vitamin E and vitamin C.</p>
                 </div>
                 <!-- /.collapse -->
               </div>
@@ -292,6 +291,7 @@ A yellow carotenoid pigment; this class of carotenoids includes oxygenated carot
   </div>
   </div>
   </footer>
-<div class="copyright text-center">© 2017 Neolife International</div>
-<div class="scroll-top-wrapper"> <span class="scroll-top-inner"> <i class="fa fa-2x fa-arrow-circle-up"></i></span></div><!-- #EndLibraryItem --></body>
+<div class="copyright text-center">© <script> document.write((new Date()).getFullYear()) </script> NeoLife International</div>
+<div class="scroll-top-wrapper"> <span class="scroll-top-inner"> <i class="fa fa-2x fa-arrow-circle-up"></i></span></div>
+<!-- #EndLibraryItem --></body>
 </html>

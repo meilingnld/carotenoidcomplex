@@ -21,5 +21,5 @@
   </div>
   </div>
   </footer>
-<div class="copyright text-center">© 2017 Neolife International</div>
+<div class="copyright text-center">© <script> document.write((new Date()).getFullYear()) </script> NeoLife International</div>
 <div class="scroll-top-wrapper"> <span class="scroll-top-inner"> <i class="fa fa-2x fa-arrow-circle-up"></i></span></div>

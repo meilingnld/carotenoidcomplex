@@ -13,7 +13,6 @@
 <script src="/js/bootstrap.js"></script>
 <script src="/js/scripts.js"></script>
 <!-- Bootstrap -->
-<link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
 <link href="/css/bootstrap.css" rel="stylesheet">
 <link href="/css/animate.css" rel="stylesheet">
 <link href="/css/style.css" rel="stylesheet">
@@ -25,7 +24,8 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
-<body data-view="/"><!-- #BeginLibraryItem "/Library/header.lbi" -->
+<body data-view="/">
+
 <div class="nav-wrapper">
   <header id="Top" class="affix-top">
     <nav class="navbar navbar-default" role="navigation">
@@ -40,7 +40,7 @@
         <div class="collapse navbar-collapse" id="defaultNavbar1"> 
           <!--div class="collapse navbar-collapse" id="navbar-collapse-main"-->
           <ul class="nav navbar-nav navbar-right">
-            <li role="presentation" data-view-section="whycarotenoidcomplex"> <a href="/whycarotenoidcomplex/">Why Carotenoid Complex</a> </li>
+            <li role="presentation" data-view-section="whycarotenoidcomplex"> <a href="/whycarotenoidcomplex/">Why Carotenoid Complex</a></li>
             <li role="presentation" data-view-section="clinicallyproven"> <a href="/clinicallyproven/clinicallyproven/">Clinically Proven</a>
               <section class="subNav clearfix">
                 <ul class="navbar-right">
@@ -72,98 +72,195 @@
                 </ul>
               </section>
             </li>
-            <li role="presentation" data-view-section="expertopinions" > <a href="/expertopinions/expertopinions/">Expert Opinions</a>
+            <li role="presentation" data-view-section="expertopinions" > <a href="/expertopinions/popularpress/">Expert Opinions</a>
               <section class="subNav clearfix">
                 <ul class="navbar-right">
-                  <li role="presentation" data-view-sub-section="expertopinions/expertopinions" > <a href="/expertopinions/expertopinions/">Expert Opinions</a></li>
                   <li data-view-sub-section="expertopinions/popularpress"><a href="/expertopinions/popularpress/">Popular Press</a></li>
                   <li data-view-sub-section="expertopinions/sab"><a href="/expertopinions/sab/">Scientific Advisory Board</a></li>
                 </ul>
               </section>
             </li>
-            <li role="presentation" data-view-section="aboutneolife"> <a href="/aboutneolife/">About NeoLife</a> </li>
+            <li role="presentation" data-view-section="aboutneolife"> <a href="/aboutneolife/">About NeoLife</a></li>
           </ul>
-          <script type="text/javascript">
-   $( document ).ready(function() {
-      var parts = $('body').data('view').split('/'),
-          section  = parts[0],
-          sub_section = parts.slice(0,2).join('\\/');
-          //remember to change this when transfer to actural server//
-	      //section  = parts[0],
-          //sub_section = parts.slice(0,2).join('\\/');
-	      
-          $('li[data-view-section='+section+']').addClass('active');
-          $('li[data-view-sub-section='+sub_section+']').addClass('active');
-    });
-  </script> 
         </div>
       </div>
     </nav>
   </header>
 </div>
-<!-- #EndLibraryItem --><div class="home wrapper">
 
-  <div class="headerLine parallax MainBannerImg" id="mainImg">
+<div class="home wrapper">
+  <section class="headerLine parallax MainBannerImg" id="mainImg">
     <div class="container">
       <div class="row">
-        <div class="col-md-6 col-md-offset-6 top_padding">
-          <h1>An <strong>Immunity Boost</strong></h1>
-          <h3>from Garden &amp; Grove</h3>
-
+        <div class="col-sm-6 col-sm-offset-6 col-md-6 col-md-offset-6 jumbotron">
+          <h2>An Immunity Boost from</h2>
+			<h1><strong>Garden</strong> &amp; <strong>Grove</strong></h1>
+			<div class="col-md-9 col-md-offset-1 bottle_img text-center"><img src="http://static.gnld.com.s3.amazonaws.com/us/carotenoid/images/home_main_bottle.png" class="animated fadeInUp"></div>
         </div>
       </div>
     </div>
-  </div>
+  </section>
   <!-- end mainImg-->
-</div>
-
-
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-md-6 col-md-offset-3">
-      <h1 class="text-center">Bootstrap with Dreamweaver</h1>
-    </div>
-  </div>
-  <hr>
-</div>
-<div class="container">
-  <div class="row text-center">
-    <div class="col-md-6 col-md-offset-3">Click outside the blue container to select this <strong>row</strong>. Columns are always contained within a row. <strong>Rows are indicated by a dashed grey line and rounded corners</strong>. </div>
-  </div>
-  <hr>
-  <div class="row">
-    <div class="text-justify col-sm-4"> Click here to select this<strong> column.</strong> Always place your content within a column. Columns are indicated by a dashed blue line. </div>
-    <div class="col-sm-4 text-justify"> You can <strong>resize a column</strong> using the handle on the right. Drag it to increase or reduce the number of columns.</div>
-    <div class="col-sm-4 text-justify"> You can <strong>offset a column</strong> using the handle on the left. Drag it to increase or reduce the offset. </div>
-  </div>
-  <hr>
-  <div class="row">
-    <div class="text-center col-md-12">
-      <div class="well"><strong> Easily build your page using the Bootstrap components from the Insert panel.</strong></div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-sm-4 text-center">
-      <h4>Adding <strong>Buttons</strong></h4>
-      <p>Quickly add buttons to your page by using the button component in the insert panel. </p>
-      <button type="button" class="btn btn-info btn-sm">Info Button</button>
-      <button type="button" class="btn btn-success btn-sm">Success Button</button>
-    </div>
-    <div class="text-center col-sm-4">
-      <h4>Adding <strong>Labels</strong></h4>
-      <p>Using the insert panel, add labels to your page by using the label component.</p>
-      <span class="label label-warning">Info Label</span><span class="label label-danger">Danger Label</span> </div>
-    <div class="text-center col-sm-4">
-      <h4>Adding <strong>Glyphicons</strong></h4>
-      <p>You can also add glyphicons to your page from within the insert panel.</p>
+  
+  <section class="home_sec1">
+    <div class="container">
       <div class="row">
-        <div class="col-xs-4"><span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span></div>
-        <div class="col-xs-4"><span class="glyphicon glyphicon-home" aria-hidden="true"> </span> </div>
-        <div class="col-xs-4"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span></div>
+        <div class="col-md-5">
+          <h1 style="margin-bottom:0;"><strong>Carotenoid Power</strong></h1>
+          <h3 style="margin-top:0;"> of 
+            250 lbs. of raw Fruits & Vegetables 
+            in every 30-serving bottle!</h3>
+        </div>
+      </div>
+      <div class="col-md-12 softgel_img_pos">
+        <table class="softgel_text">
+          <tbody>
+            <tr>
+              <td width="83" valign="top"><strong class="orange">3 softgels</strong></td>
+              <td width="20" align="center" valign="top"><strong class="orange">≈</strong></td>
+              <td width="83" valign="top"><strong class="orange">8.4 lbs.</strong></td>
+            </tr>
+            <tr>
+              <td valign="top">Carotenoid <br>
+                Complex</td>
+              <td valign="top">&nbsp;</td>
+              <td valign="top">Fruits &amp; <br>
+                Vegetables </td>
+            </tr>
+          </tbody>
+        </table>
+        <img src="http://static.gnld.com.s3.amazonaws.com/us/carotenoid/images/home_carotenoid_power.png" class="softgel_img"> 
+        <script>
+//  Scroll & Slide
+
+	$(window).scroll(function () {
+	$('.softgel_img').each(function () {
+        var imagePos = $(this).offset().top;
+        var imageHeight = $(this).height();
+        var topOfWindow = $(window).scrollTop();
+        if (imagePos < topOfWindow + imageHeight + 100 && imagePos + imageHeight + 100 > topOfWindow) {
+            $(this).addClass("animated swing1");
+        } else {
+            $(this).removeClass("animated swing1");
+        }
+    });	
+});
+
+</script> 
       </div>
     </div>
-  </div>
-  </div><!-- #BeginLibraryItem "/Library/footer.lbi" -->
+  </section>
+  <!-- home_sec1-->
+  
+  <section class="home_sec2">
+    <div class="benefit"> <img src="http://static.gnld.com.s3.amazonaws.com/us/carotenoid/images/home_sec2_titlebg.png" class="auto">
+      <h1><strong>Benefits</strong></h1>
+    </div>
+    <div class="benefitIcons orangebg">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-md-3 box post">
+            <h1><i class="ti ti-shield" aria-hidden="true"></i></h1>
+            <h4>Immunity<br>&nbsp;
+</h4>
+          </div>
+          <div class="col-md-3 box post">
+            <h1><i class="fa fa-heartbeat" aria-hidden="true"></i></h1>
+            <h4>Heart Health<br>&nbsp;</h4>
+          </div>
+          <div class="col-md-3 box post">
+            <h1><i class="ti ti-face-smile" aria-hidden="true"></i></h1>
+            <h4>Anti-Aging<br>&nbsp;</h4>
+          </div>
+          <div class="col-md-3 box post">
+            <h1><i class="fa fa-plus-square" aria-hidden="true"></i></h1>
+            <h4>Optional Cellular
+              Defense</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- home_sec2-->
+  
+  <section class="home_realpeople_sec3">
+    <div class="container">
+		<h1 class="text-center">Real People, <strong>Real Stories</strong></h1>
+      <div id="myCarousel" class="carousel slide" data-ride="carousel"> 
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+        </ol>
+        
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+          <div class="item active">
+            <div class="row box">
+              <div class="col-md-3 text-center"><img src="http://static.gnld.com.s3.amazonaws.com/us/carotenoid/images/home_people1.jpg" alt="Chania">
+                <div>
+                  <h4 class="orange">Los Angeles</h4>
+                  <p>LA is always so much fun!</p>
+                </div>
+              </div>
+              <div class="col-md-3 text-center"><img src="http://static.gnld.com.s3.amazonaws.com/us/carotenoid/images/home_people2.jpg" alt="Chania">
+                <div>
+                  <h4 class="orange">Los Angeles</h4>
+                  <p>LA is always so much fun!</p>
+                </div>
+              </div>
+              <div class="col-md-3 text-center"><img src="http://static.gnld.com.s3.amazonaws.com/us/carotenoid/images/home_people3.jpg" alt="Chania">
+                <div>
+                  <h4 class="orange">Los Angeles</h4>
+                  <p>LA is always so much fun!</p>
+                </div>
+              </div>
+              <div class="col-md-3 text-center"><img src="http://static.gnld.com.s3.amazonaws.com/us/carotenoid/images/home_people4.jpg" alt="Chania">
+                <div>
+                  <h4 class="orange">Los Angeles</h4>
+                  <p>LA is always so much fun!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="item">
+            <div class="row box">
+              <div class="col-md-3 text-center"><img src="http://static.gnld.com.s3.amazonaws.com/us/carotenoid/images/home_people1.jpg" alt="Chania">
+                <div>
+                  <h4 class="orange">Los Angeles</h4>
+                  <p>LA is always so much fun!</p>
+                </div>
+              </div>
+              <div class="col-md-3 text-center"><img src="http://static.gnld.com.s3.amazonaws.com/us/carotenoid/images/home_people2.jpg" alt="Chania">
+                <div>
+                  <h4 class="orange">Los Angeles</h4>
+                  <p>LA is always so much fun!</p>
+                </div>
+              </div>
+              <div class="col-md-3 text-center"><img src="http://static.gnld.com.s3.amazonaws.com/us/carotenoid/images/home_people3.jpg" alt="Chania">
+                <div>
+                  <h4 class="orange">Los Angeles</h4>
+                  <p>LA is always so much fun!</p>
+                </div>
+              </div>
+              <div class="col-md-3 text-center"><img src="http://static.gnld.com.s3.amazonaws.com/us/carotenoid/images/home_people4.jpg" alt="Chania">
+                <div>
+                  <h4 class="orange">Los Angeles</h4>
+                  <p>LA is always so much fun!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Left and right controls --> 
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev"> <h2 class="ti ti-angle-left orange"></h2> <span class="sr-only">Previous</span> </a> <a class="right carousel-control" href="#myCarousel" data-slide="next"> <h2 class="ti ti-angle-right orange"></h2> <span class="sr-only">Next</span> </a> </div>
+    </div>
+  </section>
+  <!-- home_realpeople_sec3--> 
+</div><!-- #BeginLibraryItem "/Library/footer.lbi" -->
   <footer>
   <div class="container">
    <div class="row">
@@ -186,6 +283,15 @@
   </div>
   </div>
   </footer>
-<div class="copyright text-center">© 2017 Neolife International</div>
-<div class="scroll-top-wrapper"> <span class="scroll-top-inner"> <i class="fa fa-2x fa-arrow-circle-up"></i></span></div><!-- #EndLibraryItem --></body>
+<div class="copyright text-center">© <script> document.write((new Date()).getFullYear()) </script> NeoLife International</div>
+<div class="scroll-top-wrapper"> <span class="scroll-top-inner"> <i class="fa fa-2x fa-arrow-circle-up"></i></span></div>
+<!-- #EndLibraryItem --><script type="text/javascript">
+jQuery(document).ready(function() {
+	jQuery('.post').addClass("scroll_hidden").viewportChecker({
+	    classToAdd: 'scroll_visible animated zoomIn', // Class to add to the elements when they are visible
+	    offset: 100    
+	   });  
+});            
+</script>
+</body>
 </html>

@@ -71,11 +71,10 @@
                 </ul>
               </section>
             </li>
-            <li role="presentation" data-view-section="expertopinions" > <a href="/expertopinions/expertopinions/">Expert Opinions</a>
+            <li role="presentation" data-view-section="expertopinions" > <a href="/expertopinions/popularpress/">Expert Opinions</a>
               <section class="subNav clearfix">
                 <ul class="navbar-right">
-                  <li role="presentation" data-view-sub-section="expertopinions/expertopinions" > <a href="/expertopinions/expertopinions/">Expert Opinions</a></li>
-                  <li data-view-sub-section="expertopinions/popularpress"><a href="/expertopinions/popularpress/">Popular Press</a></li>
+                  <li data-view-sub-section="expertopinions/popularpress"><a href="/expertopinions/popularpress/">Popular Press </a></li>
                   <li data-view-sub-section="expertopinions/sab"><a href="/expertopinions/sab/">Scientific Advisory Board</a></li>
                 </ul>
               </section>
@@ -87,10 +86,10 @@
       var parts = $('body').data('view').split('/'),
           section  = parts[0],
           sub_section = parts.slice(0,2).join('\\/');
+	   
           //remember to change this when transfer to actural server//
 	      //section  = parts[0],
           //sub_section = parts.slice(0,2).join('\\/');
-	      
           $('li[data-view-section='+section+']').addClass('active');
           $('li[data-view-sub-section='+sub_section+']').addClass('active');
     });
@@ -104,28 +103,34 @@
   <section class="headerLine parallax MainBannerImg" id="mainImg">
       <div class="container">
         <div class="row">
-          <div class="col-md-6 col-md-offset-6">
-            <h1>About NeoLife</h1>
-            <h4>NeoLife has been in business almost 60 years, since 1958, and operating in over 50 countries around the world.</h4>
-            <h4>We are on a mission to make the world a healthier and happier place, helping people get charged up on good nutrition.</h4>
+          <div class="col-md-6">
+            <h1>More Powerful than <strong>Vitamins E and C</strong>!</h1>
+
           </div>
         </div>
       </div>
   </section>
   <!-- end mainImg-->
 
-  <section class="strongerec_details paragraphs">
+  <section class="strongerec_details">
     <div class="container">
       <div class="row">
-        <div class="col-md-12">
+        <div class="col-md-6">
           <div>
 			  <p><img src="http://static.gnld.com.s3.amazonaws.com/us/carotenoid/images/E_Cchart.gif"></p>
-            <p>When comparing the Total Antioxidant Potential (TAP)* of Carotenoid Complex, even Vitamin E comes up short. In fact, one capsule of Carotenoid Complex equals the antioxidant power of four 200 IU capsules of vitamin E.</p>
-            <p>When the TAP of Carotenoid Complex was compared to Vitamin C, the results were equally impressive. One capsule of Carotenoid Complex equals the antioxidant power of two 200 mg tablets of vitamin C.              </p>
-            <p>There simply is no other natural, food-based supplement on the market that has the antioxidant strength of Daily Carotenoid Complex.              </p>
+            
+          </div>
+        </div>
+       <div class="col-md-6">
+          <div>
+			 
+            <p>When comparing the Total Antioxidant Potential (TAP)* of Carotenoid Complex, even Vitamin E comes up short. In fact, <strong>one capsule of Carotenoid Complex equals the antioxidant power of four 200 IU capsules of vitamin E.</strong></p>
+            <p>When the TAP of Carotenoid Complex was compared to Vitamin C, the results were equally impressive. <strong>One capsule of Carotenoid Complex equals the antioxidant power of two 200 mg tablets of vitamin C</strong>. </p>
+            <p>There simply is <strong>no other natural, food-based supplement on the market that has the antioxidant strength of Daily Carotenoid Complex</strong>. </p>
 			  <p><small>* Total Antioxidant Potential (TAP) is a standardized, laboratory method of measuring the strength of an antioxidant. It allows one antioxidant to be compared to another on an equal basis.</small></p>
           </div>
         </div>
+        
 
       </div>
     </div>
@@ -154,6 +159,7 @@
   </div>
   </div>
   </footer>
-<div class="copyright text-center">© 2017 Neolife International</div>
-<div class="scroll-top-wrapper"> <span class="scroll-top-inner"> <i class="fa fa-2x fa-arrow-circle-up"></i></span></div><!-- #EndLibraryItem --></body>
+<div class="copyright text-center">© <script> document.write((new Date()).getFullYear()) </script> NeoLife International</div>
+<div class="scroll-top-wrapper"> <span class="scroll-top-inner"> <i class="fa fa-2x fa-arrow-circle-up"></i></span></div>
+<!-- #EndLibraryItem --></body>
 </html>

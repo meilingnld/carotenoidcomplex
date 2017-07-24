@@ -71,11 +71,10 @@
                 </ul>
               </section>
             </li>
-            <li role="presentation" data-view-section="expertopinions" > <a href="/expertopinions/expertopinions/">Expert Opinions</a>
+            <li role="presentation" data-view-section="expertopinions" > <a href="/expertopinions/popularpress/">Expert Opinions</a>
               <section class="subNav clearfix">
                 <ul class="navbar-right">
-                  <li role="presentation" data-view-sub-section="expertopinions/expertopinions" > <a href="/expertopinions/expertopinions/">Expert Opinions</a></li>
-                  <li data-view-sub-section="expertopinions/popularpress"><a href="/expertopinions/popularpress/">Popular Press</a></li>
+                  <li data-view-sub-section="expertopinions/popularpress"><a href="/expertopinions/popularpress/">Popular Press </a></li>
                   <li data-view-sub-section="expertopinions/sab"><a href="/expertopinions/sab/">Scientific Advisory Board</a></li>
                 </ul>
               </section>
@@ -87,10 +86,10 @@
       var parts = $('body').data('view').split('/'),
           section  = parts[0],
           sub_section = parts.slice(0,2).join('\\/');
+	   
           //remember to change this when transfer to actural server//
 	      //section  = parts[0],
           //sub_section = parts.slice(0,2).join('\\/');
-	      
           $('li[data-view-section='+section+']').addClass('active');
           $('li[data-view-sub-section='+sub_section+']').addClass('active');
     });
@@ -104,31 +103,24 @@
   <section class="headerLine parallax MainBannerImg" id="mainImg">
       <div class="container">
         <div class="row">
-          <div class="col-md-6 col-md-offset-6">
-            <h1>Why Carotenoid Complex</h1>
-            <h4>NeoLife has been in business almost 60 years, since 1958, and operating in over 50 countries around the world.</h4>
-            <h4>We are on a mission to make the world a healthier and happier place, helping people get charged up on good nutrition.</h4>
+          <div class="col-md-6">
+            <h1>Why <strong>Carotenoid Complex</strong></h1>
+            <h3>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. </h3>
           </div>
         </div>
       </div>
   </section>
   <!-- end mainImg-->
 
-  <section class="whycarotenoidcomplex_details paragraphs">
+  <section class="whycarotenoidcomplex_details">
     <div class="container">
       <div class="row">
         <div class="col-md-9">
           <div>
-            <p>
-
-Our superior quality products use nature’s finest whole food ingredients that are based in nature and backed by leading edge science. Every NeoLife product features the Scientific Advisory Board seal of approval, representing the worldwide network of leading scientists, doctors, nutritionists, and research facilities all dedicated to delivering optimum health based on nature’s blueprint.
-</p>
-            <p>We offer core nutrition for a foundation of good health, to targeted solutions like heart health and immunity, children’s nutrition, and sport nutrition in addition to beauty and earth-friendly home care products.              </p>
-            <p>NeoLife isn’t just a company, it’s a family. Join us on our mission to make the world a healthier and happier place and help us end the trend of sickness and chronic disease. </p>
           </div>
         </div>
         <div class="col-md-3">
-        <img src="http://static.gnld.com.s3.amazonaws.com/us/neolifedetox/images/sab_logo-1.png">
+       
 		</div>
 
       </div>
@@ -158,6 +150,7 @@ Our superior quality products use nature’s finest whole food ingredients that 
   </div>
   </div>
   </footer>
-<div class="copyright text-center">© 2017 Neolife International</div>
-<div class="scroll-top-wrapper"> <span class="scroll-top-inner"> <i class="fa fa-2x fa-arrow-circle-up"></i></span></div><!-- #EndLibraryItem --></body>
+<div class="copyright text-center">© <script> document.write((new Date()).getFullYear()) </script> NeoLife International</div>
+<div class="scroll-top-wrapper"> <span class="scroll-top-inner"> <i class="fa fa-2x fa-arrow-circle-up"></i></span></div>
+<!-- #EndLibraryItem --></body>
 </html>

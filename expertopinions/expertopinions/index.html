@@ -71,11 +71,10 @@
                 </ul>
               </section>
             </li>
-            <li role="presentation" data-view-section="expertopinions" > <a href="/expertopinions/expertopinions/">Expert Opinions</a>
+            <li role="presentation" data-view-section="expertopinions" > <a href="/expertopinions/popularpress/">Expert Opinions</a>
               <section class="subNav clearfix">
                 <ul class="navbar-right">
-                  <li role="presentation" data-view-sub-section="expertopinions/expertopinions" > <a href="/expertopinions/expertopinions/">Expert Opinions</a></li>
-                  <li data-view-sub-section="expertopinions/popularpress"><a href="/expertopinions/popularpress/">Popular Press</a></li>
+                  <li data-view-sub-section="expertopinions/popularpress"><a href="/expertopinions/popularpress/">Popular Press </a></li>
                   <li data-view-sub-section="expertopinions/sab"><a href="/expertopinions/sab/">Scientific Advisory Board</a></li>
                 </ul>
               </section>
@@ -87,10 +86,10 @@
       var parts = $('body').data('view').split('/'),
           section  = parts[0],
           sub_section = parts.slice(0,2).join('\\/');
+	   
           //remember to change this when transfer to actural server//
 	      //section  = parts[0],
           //sub_section = parts.slice(0,2).join('\\/');
-	      
           $('li[data-view-section='+section+']').addClass('active');
           $('li[data-view-sub-section='+sub_section+']').addClass('active');
     });
@@ -104,10 +103,9 @@
   <section class="headerLine parallax MainBannerImg" id="mainImg">
     <div class="container">
       <div class="row">
-        <div class="col-md-6 col-md-offset-3 text-center top_padding">
-          <h1>Expert Opinions</h1>
+        <div class="col-md-5">
+          <h1><strong>Expert Opinions</strong></h1>
           <h3>Everyone's Talking About Carotenoids!</h3>
-			<h1 class="arrows-circle-down icon"></h1>
         </div>
       </div>
     </div>
@@ -116,18 +114,18 @@
   
   <section class="expertopinions_details nomargin">
     <div class="container-fluid">
-      <div class="row">
-        <div class="magazine1">
+      <div class="row div_table_row">
+        <div class="magazine1 div_table_cell">
           <div class="col-md-2">
-			  <h1><i class="icon-basic-star icons"></i></h1>
+			  <h1><i class="icon-basic-star icons post"></i></h1>
 			</div>
           <div class="col-md-10">
             <h3>Hundreds of articles on the power of carotenoids have appeared in national publications in the last year alone! Here's a brief glimpse:</h3>
           </div>
         </div>
-        <div class="magazine2">
+        <div class="magazine2 div_table_cell">
           <div class="col-md-2">
-			  <h1><i class="icon-basic-spread-text icons"></i></h1>
+			  <h1><i class="icon-basic-spread-text icons post"></i></h1>
 			</div>
            <div class="col-md-10">
             <p><strong>Newsweek:</strong> Carotenoids are great for eye health <br>
@@ -168,6 +166,15 @@
   </div>
   </div>
   </footer>
-<div class="copyright text-center">© 2017 Neolife International</div>
-<div class="scroll-top-wrapper"> <span class="scroll-top-inner"> <i class="fa fa-2x fa-arrow-circle-up"></i></span></div><!-- #EndLibraryItem --></body>
+<div class="copyright text-center">© <script> document.write((new Date()).getFullYear()) </script> NeoLife International</div>
+<div class="scroll-top-wrapper"> <span class="scroll-top-inner"> <i class="fa fa-2x fa-arrow-circle-up"></i></span></div>
+<!-- #EndLibraryItem --><script type="text/javascript">
+jQuery(document).ready(function() {
+	jQuery('.post').addClass("scroll_hidden").viewportChecker({
+	    classToAdd: 'scroll_visible animated zoomIn', // Class to add to the elements when they are visible
+	    offset: 100    
+	   });  
+});            
+</script>
+</body>
 </html>

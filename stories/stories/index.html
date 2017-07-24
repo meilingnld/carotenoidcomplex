@@ -71,11 +71,10 @@
                 </ul>
               </section>
             </li>
-            <li role="presentation" data-view-section="expertopinions" > <a href="/expertopinions/expertopinions/">Expert Opinions</a>
+            <li role="presentation" data-view-section="expertopinions" > <a href="/expertopinions/popularpress/">Expert Opinions</a>
               <section class="subNav clearfix">
                 <ul class="navbar-right">
-                  <li role="presentation" data-view-sub-section="expertopinions/expertopinions" > <a href="/expertopinions/expertopinions/">Expert Opinions</a></li>
-                  <li data-view-sub-section="expertopinions/popularpress"><a href="/expertopinions/popularpress/">Popular Press</a></li>
+                  <li data-view-sub-section="expertopinions/popularpress"><a href="/expertopinions/popularpress/">Popular Press </a></li>
                   <li data-view-sub-section="expertopinions/sab"><a href="/expertopinions/sab/">Scientific Advisory Board</a></li>
                 </ul>
               </section>
@@ -87,10 +86,10 @@
       var parts = $('body').data('view').split('/'),
           section  = parts[0],
           sub_section = parts.slice(0,2).join('\\/');
+	   
           //remember to change this when transfer to actural server//
 	      //section  = parts[0],
           //sub_section = parts.slice(0,2).join('\\/');
-	      
           $('li[data-view-section='+section+']').addClass('active');
           $('li[data-view-sub-section='+sub_section+']').addClass('active');
     });
@@ -106,7 +105,7 @@
       <div class="row">
         <div class="col-md-6">
           <h1>The <strong>Powerhouse</strong> Supplement</h1>
-          <img src="http://static.gnld.com.s3.amazonaws.com/us/carotenoid/images/stories_main_bottle.png" class="auto animated fadeInUp">
+			<div class="col-sm-6 col-md-8 text-center"><img src="http://static.gnld.com.s3.amazonaws.com/us/carotenoid/images/stories_main_bottle.png" class="animated fadeInUp"></div>
         </div>
       </div>
     </div>
@@ -114,6 +113,7 @@
   <!-- end mainImg-->
   
   <section class="stories_details">
+   <div class="spacer"></div>
     <div class="container">
       <div class="row">
         <div class="col-md-12">
@@ -200,6 +200,7 @@
     </div>
   </section>
   <!-- end stories_details-->
+	<div class="spacer"></div>
   <section class="stories_chart_sec">
     <div class="container-fluid">
       <div class="row">
@@ -211,17 +212,17 @@
       <div class="row div_table_row">
         <div class="div_table_cell">
           <img src="http://static.gnld.com.s3.amazonaws.com/us/carotenoid/images/story_details_img1.jpg">
-          <div class="box"><p>Only about 50-60 of the over 600 carotenoid compounds discovered to date actually occur in the human food supply.</p>
+          <div class="box"><p>Only about <strong>50-60 of the over 600 carotenoid compounds</strong> discovered to date actually occur in the <strong>human food supply</strong>.</p>
 		  </div>
         </div>
         <div class="div_table_cell">
           <img src="http://static.gnld.com.s3.amazonaws.com/us/carotenoid/images/story_details_img2.jpg">
-          <div class="box"><p>While Carotenoid Complex is derived entirely from whole foods you normally eat, some competitors have “spiked” their supplements with high levels of specific carotenoids from unnatural sources. </p>
+          <div class="box"><p>While Carotenoid Complex is derived entirely from whole foods you normally eat, <strong>some competitors have “spiked” their supplements with high levels of specific carotenoids from unnatural sources.</strong> </p>
 			</div>
         </div>
         <div class="div_table_cell">
           <img src="http://static.gnld.com.s3.amazonaws.com/us/carotenoid/images/story_details_img3.jpg">
-          <div class="box"><p>While Carotenoid Complex is derived entirely from whole foods you normally eat, some competitors have “spiked” their supplements with high levels of specific carotenoids from unnatural sources. </p>
+          <div class="box"><p>In addition, some products claim levels of nutrients not supported by independent analysis.</p>
 			</div>
         </div>
       </div>
@@ -394,9 +395,8 @@
             <div id="NutriLink" class="tabcontent">
               <h4>NutriLink Inc. Balance of Nature Vegetable Phytoblend</h4>
               <ul>
-                <li><strong>Alpha-Carotene </strong><br>
-                  <span class="ti-check"></span>
-                  </h3>
+                <li><strong>Alpha-Carotene </strong>
+				  <h3><span class="ti-check"></span></h3>
                   <p>13 IU/cap </p>
                 </li>
                 <li><strong>Beta-Carotene </strong>
@@ -500,8 +500,15 @@ function openCity(evt, companyName) {
 document.getElementById("defaultOpen").click();
 </script> 
           </div>
+			<div class="clearfix"></div>
         </div>
       </div>
+      <div class="row">
+      <div class="col-md-6 col-md-offset-3">
+		  <p>&nbsp;</p>
+		  <p><small>NOTE: The protocol for comparitive analysis of Carotenoid Complex and competitive products was carried out by reverse phase HPLC (high performance liquid chromatography) in conformance with methodologies outlined in peer-reviewed analytical journals.</small></p>
+		  </div>
+	  </div>
     </div>
   </section>
   <!-- end stories_chart_sec--> 
@@ -528,6 +535,7 @@ document.getElementById("defaultOpen").click();
   </div>
   </div>
   </footer>
-<div class="copyright text-center">© 2017 Neolife International</div>
-<div class="scroll-top-wrapper"> <span class="scroll-top-inner"> <i class="fa fa-2x fa-arrow-circle-up"></i></span></div><!-- #EndLibraryItem --></body>
+<div class="copyright text-center">© <script> document.write((new Date()).getFullYear()) </script> NeoLife International</div>
+<div class="scroll-top-wrapper"> <span class="scroll-top-inner"> <i class="fa fa-2x fa-arrow-circle-up"></i></span></div>
+<!-- #EndLibraryItem --></body>
 </html>

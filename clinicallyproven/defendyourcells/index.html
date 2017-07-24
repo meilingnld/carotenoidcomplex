@@ -71,11 +71,10 @@
                 </ul>
               </section>
             </li>
-            <li role="presentation" data-view-section="expertopinions" > <a href="/expertopinions/expertopinions/">Expert Opinions</a>
+            <li role="presentation" data-view-section="expertopinions" > <a href="/expertopinions/popularpress/">Expert Opinions</a>
               <section class="subNav clearfix">
                 <ul class="navbar-right">
-                  <li role="presentation" data-view-sub-section="expertopinions/expertopinions" > <a href="/expertopinions/expertopinions/">Expert Opinions</a></li>
-                  <li data-view-sub-section="expertopinions/popularpress"><a href="/expertopinions/popularpress/">Popular Press</a></li>
+                  <li data-view-sub-section="expertopinions/popularpress"><a href="/expertopinions/popularpress/">Popular Press </a></li>
                   <li data-view-sub-section="expertopinions/sab"><a href="/expertopinions/sab/">Scientific Advisory Board</a></li>
                 </ul>
               </section>
@@ -87,10 +86,10 @@
       var parts = $('body').data('view').split('/'),
           section  = parts[0],
           sub_section = parts.slice(0,2).join('\\/');
+	   
           //remember to change this when transfer to actural server//
 	      //section  = parts[0],
           //sub_section = parts.slice(0,2).join('\\/');
-	      
           $('li[data-view-section='+section+']').addClass('active');
           $('li[data-view-sub-section='+sub_section+']').addClass('active');
     });
@@ -104,10 +103,8 @@
   <section class="headerLine parallax MainBannerImg" id="mainImg">
       <div class="container">
         <div class="row">
-          <div class="col-md-5 col-md-offset-7">
-            <h1>Carotenoid Complex</h1>
-            <h3><br>
-            Defense your cells</h3>
+          <div class="col-md-6 col-md-offset-6">
+            <h1>Carotenoid Complex <strong>Defends</strong> Your Cells</h1>
           </div>
         </div>
       </div>
@@ -118,22 +115,21 @@
     <div class="container">
       <div class="row">
         <div class="col-md-4">
+          <img src="http://static.gnld.com.s3.amazonaws.com/us/carotenoid/images/defendyourcells_details_cells.jpg">
+        </div>
+        <div class="col-md-4">
           <div>
             <p>Your body is made up of trillions of "building blocks" called cells, and each is fully able to perform all the processes that define life. Cells produce energy, reproduce, digest nutrients and eliminate wastes. In addition, cells are constantly under attack. They are under attack from the outside and within the cell itself.</p>
+            <p>Scientists have learned through decades of research that <strong>free radicals are a major threat to the health of your cells</strong>. Free radicals constantly attack and damage cells, and set the stage for disease to develop. <strong>Your body's best line of defense against free radical damage are powerful antioxidants such as Carotenoid Complex</strong>.</p>
           </div>
         </div>
         <div class="col-md-4">
           <div>
-            
-            <p>Scientists have learned through decades of research that free radicals are a major threat to the health of your cells. Free radicals constantly attack and damage cells, and set the stage for disease to develop. Your body's best line of defense against free radical damage are powerful antioxidants such as Carotenoid Complex.</p>
+            <p>NeoLife's revolutionary Carotenoid Complex has been clinically proven to <strong>reduce the oxidative damage to cellular lipids</strong>, which are a critical part of a cell's structure and integrity. These exciting results show that Carotenoid Complex can reduce the cellular damage created by oxidative stress. </p>
+			  <p><small>(<a href="/researchresources/references/#d5" target="_self">reference: Daily Carotenoid Complex No. 5</a>)</small></p>
           </div>
         </div>
-        <div class="col-md-4">
-          <div>
-            <p>NeoLife's revolutionary Carotenoid Complex has been clinically proven to reduce the oxidative damage to cellular lipids, which are a critical part of a cell's structure and integrity. These exciting results show that Carotenoid Complex can reduce the cellular damage created by oxidative stress.              </p>
-            <p>(reference: Daily Carotenoid Complex No. 5)</p>
-          </div>
-        </div>
+
 
       </div>
     </div>
@@ -162,6 +158,7 @@
   </div>
   </div>
   </footer>
-<div class="copyright text-center">© 2017 Neolife International</div>
-<div class="scroll-top-wrapper"> <span class="scroll-top-inner"> <i class="fa fa-2x fa-arrow-circle-up"></i></span></div><!-- #EndLibraryItem --></body>
+<div class="copyright text-center">© <script> document.write((new Date()).getFullYear()) </script> NeoLife International</div>
+<div class="scroll-top-wrapper"> <span class="scroll-top-inner"> <i class="fa fa-2x fa-arrow-circle-up"></i></span></div>
+<!-- #EndLibraryItem --></body>
 </html>
